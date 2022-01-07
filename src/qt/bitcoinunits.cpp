@@ -20,9 +20,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(RTM);
-    unitlist.append(mRTM);
-    unitlist.append(uRTM);
+    unitlist.append(MAMA);
+    unitlist.append(mMAMA);
+    unitlist.append(uMAMA);
     unitlist.append(ruffs);
     return unitlist;
 }
@@ -31,9 +31,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case RTM:
-    case mRTM:
-    case uRTM:
+    case MAMA:
+    case mMAMA:
+    case uMAMA:
     case ruffs:
         return true;
     default:
@@ -47,9 +47,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case RTM: return QString("RTM");
-            case mRTM: return QString("mRTM");
-            case uRTM: return QString::fromUtf8("μRTM");
+            case MAMA: return QString("MAMA");
+            case mMAMA: return QString("mMAMA");
+            case uMAMA: return QString::fromUtf8("μMAMA");
             case ruffs: return QString("ruffs");
             default: return QString("???");
         }
@@ -58,9 +58,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case RTM: return QString("tRTM");
-            case mRTM: return QString("mtRTM");
-            case uRTM: return QString::fromUtf8("μtRTM");
+            case MAMA: return QString("tMAMA");
+            case mMAMA: return QString("mtMAMA");
+            case uMAMA: return QString::fromUtf8("μtMAMA");
             case ruffs: return QString("tduffs");
             default: return QString("???");
         }
@@ -73,9 +73,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case RTM: return QString("Raptoreum");
-            case mRTM: return QString("Milli-Raptoreum (1 / 1" THIN_SP_UTF8 "000)");
-            case uRTM: return QString("Micro-Raptoreum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case MAMA: return QString("Raptoreum");
+            case mMAMA: return QString("Milli-Raptoreum (1 / 1" THIN_SP_UTF8 "000)");
+            case uMAMA: return QString("Micro-Raptoreum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case ruffs: return QString("Ten Nano-Raptoreum (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -84,9 +84,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case RTM: return QString("TestRaptoreums");
-            case mRTM: return QString("Milli-TestRaptoreum (1 / 1" THIN_SP_UTF8 "000)");
-            case uRTM: return QString("Micro-TestRaptoreum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case MAMA: return QString("TestRaptoreums");
+            case mMAMA: return QString("Milli-TestRaptoreum (1 / 1" THIN_SP_UTF8 "000)");
+            case uMAMA: return QString("Micro-TestRaptoreum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case ruffs: return QString("Ten Nano-TestRaptoreum (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -97,9 +97,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case RTM:  return 100000000;
-    case mRTM: return 100000;
-    case uRTM: return 100;
+    case MAMA:  return 100000000;
+    case mMAMA: return 100000;
+    case uMAMA: return 100;
     case ruffs: return 1;
     default:   return 100000000;
     }
@@ -109,9 +109,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case RTM: return 8;
-    case mRTM: return 5;
-    case uRTM: return 2;
+    case MAMA: return 8;
+    case mMAMA: return 5;
+    case uMAMA: return 2;
     case ruffs: return 0;
     default: return 0;
     }

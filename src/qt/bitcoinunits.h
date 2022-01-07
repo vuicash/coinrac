@@ -58,9 +58,9 @@ public:
      */
     enum Unit
     {
-        RTM,
-        mRTM,
-        uRTM,
+        MAMA,
+        mMAMA,
+        uMAMA,
         ruffs
     };
 
