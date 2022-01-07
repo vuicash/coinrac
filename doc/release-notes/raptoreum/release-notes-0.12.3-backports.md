@@ -74,7 +74,7 @@
 - [`785d4d0ee`](https://github.com/raptoreum/raptoreum/commit/785d4d0ee) Merge #8949: Be more agressive in getting connections to peers with relevant services.
 - [`67196dc81`](https://github.com/raptoreum/raptoreum/commit/67196dc81) Only consider nodes missing relevant services after 40 failed attemps
 - [`c45c767f8`](https://github.com/raptoreum/raptoreum/commit/c45c767f8) Merge #10294: [Wallet] unset change position when there is no change
-- [`562332601`](https://github.com/raptoreum/raptoreum/commit/562332601) Merge #10228: build: regenerate bitcoin-config.h as necessary
+- [`562332601`](https://github.com/raptoreum/raptoreum/commit/562332601) Merge #16788: build: regenerate bitcoin-config.h as necessary
 - [`ee3ff3552`](https://github.com/raptoreum/raptoreum/commit/ee3ff3552) Merge #10215: Check interruptNet during dnsseed lookups
 - [`69058b83f`](https://github.com/raptoreum/raptoreum/commit/69058b83f) Merge #10245: Minor fix in build documentation for FreeBSD 11
 - [`a601206d3`](https://github.com/raptoreum/raptoreum/commit/a601206d3) Merge #10410: Fix importwallet edge case rescan bug

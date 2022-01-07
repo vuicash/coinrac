@@ -630,7 +630,7 @@
 - [`07b4c08bd`](https://github.com/raptoreum/raptoreum/commit/07b4c08bd) Merge #9951: Wallet database handling abstractions/simplifications
 - [`83d0637f2`](https://github.com/raptoreum/raptoreum/commit/83d0637f2) Merge #10097: Move zmq test skipping logic into individual test case.
 - [`14cbf547c`](https://github.com/raptoreum/raptoreum/commit/14cbf547c) Merge #10023: [tests] remove maxblocksinflight.py (functionality covered by other test)
-- [`6fb286686`](https://github.com/raptoreum/raptoreum/commit/6fb286686) Merge #10229: Tests: Add test for getdifficulty
+- [`6fb286686`](https://github.com/raptoreum/raptoreum/commit/6fb286686) Merge #16787: Tests: Add test for getdifficulty
 - [`7cf74ddbc`](https://github.com/raptoreum/raptoreum/commit/7cf74ddbc) Merge #10239: Make Boost use std::atomic internally
 - [`3d46bd3e7`](https://github.com/raptoreum/raptoreum/commit/3d46bd3e7) Merge #10181: Include cleanup
 - [`ebded7d83`](https://github.com/raptoreum/raptoreum/commit/ebded7d83) Update help text via gen-manpages.sh
@@ -668,7 +668,7 @@
 - [`c8a565d6e`](https://github.com/raptoreum/raptoreum/commit/c8a565d6e) Merge #10090: Update bitcoin.conf with example for pruning
 - [`6f558270d`](https://github.com/raptoreum/raptoreum/commit/6f558270d) Merge #10143: [net] Allow disconnectnode RPC to be called with node id
 - [`4efa99c2d`](https://github.com/raptoreum/raptoreum/commit/4efa99c2d) Merge #10221: Stop treating coinbase outputs differently in GUI: show them at 1conf
-- [`16053cd52`](https://github.com/raptoreum/raptoreum/commit/16053cd52) Merge #10226: wallet: Use boost to more portably ensure -wallet specifies only a filename
+- [`16053cd52`](https://github.com/raptoreum/raptoreum/commit/16053cd52) Merge #16789: wallet: Use boost to more portably ensure -wallet specifies only a filename
 - [`7fa60a1c7`](https://github.com/raptoreum/raptoreum/commit/7fa60a1c7) Merge #10219: Tests: Order Python Tests Differently
 - [`0b232fd1c`](https://github.com/raptoreum/raptoreum/commit/0b232fd1c) Merge #10208: [wallet] Rescan abortability
 - [`55d1251ff`](https://github.com/raptoreum/raptoreum/commit/55d1251ff) Merge #9480: De-duplicate SignatureCacheHasher
@@ -714,7 +714,7 @@
 - [`55dc3dae5`](https://github.com/raptoreum/raptoreum/commit/55dc3dae5) Merge #10486: devtools: Retry after signing fails in github-merge
 - [`0d2f2b361`](https://github.com/raptoreum/raptoreum/commit/0d2f2b361) Merge #10273: [scripts] Minor improvements to `macdeployqtplus` script.
 - [`317b797e2`](https://github.com/raptoreum/raptoreum/commit/317b797e2) Merge #9670: contrib: github-merge improvements
-- [`a3467dd26`](https://github.com/raptoreum/raptoreum/commit/a3467dd26) Merge #10228: build: regenerate bitcoin-config.h as necessary
+- [`a3467dd26`](https://github.com/raptoreum/raptoreum/commit/a3467dd26) Merge #16788: build: regenerate bitcoin-config.h as necessary
 - [`a089c9325`](https://github.com/raptoreum/raptoreum/commit/a089c9325) Merge #9827: Improve ScanForWalletTransactions return value
 - [`383d1819a`](https://github.com/raptoreum/raptoreum/commit/383d1819a) Merge #10211: [doc] Contributor fixes & new "finding reviewers" section
 - [`632956a80`](https://github.com/raptoreum/raptoreum/commit/632956a80) Merge #9693: Prevent integer overflow in ReadVarInt.

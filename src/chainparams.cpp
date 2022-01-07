@@ -462,7 +462,7 @@ public:
         pchMessageStart[1] = 0x74;//t
         pchMessageStart[2] = 0x6d;//m
         pchMessageStart[3] = 0x2e;//.
-        nDefaultPort = 10226;
+        nDefaultPort = 16789;
         nPruneAfterHeight = 100000;
         //FindMainNetGenesisBlock(1614369600, 0x20001fff, "main");
         genesis = CreateGenesisBlock(1614369600, 1130, 0x20001fff, 4, 5000 * COIN);
@@ -604,7 +604,7 @@ public:
         pchMessageStart[1] = 0x72; //r
         pchMessageStart[2] = 0x74; //t
         pchMessageStart[3] = 0x6d; //m
-        nDefaultPort = 10227;
+        nDefaultPort = 16786;
         nPruneAfterHeight = 1000;
         //FindMainNetGenesisBlock(1618814931,  0x20001fff, "test");
         genesis = CreateGenesisBlock(1618814931, 1398, 0x20001fff, 4, 5000 * COIN);
@@ -635,7 +635,7 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
         // Testnet Raptoreum BIP44 coin type is '1' (All coin's testnet default)
-        nExtCoinType = 10227;
+        nExtCoinType = 16786;
 
         // long living quorum params
         consensus.llmqs[Consensus::LLMQ_50_60] = llmq3_60;
