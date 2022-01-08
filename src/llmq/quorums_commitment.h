@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_QUORUMS_COMMITMENT_H
-#define RAPTOREUM_QUORUMS_COMMITMENT_H
+#ifndef COINRAC_QUORUMS_COMMITMENT_H
+#define COINRAC_QUORUMS_COMMITMENT_H
 
 #include "consensus/params.h"
 
@@ -137,4 +137,4 @@ bool CheckLLMQCommitment(const CTransaction& tx, const CBlockIndex* pindexPrev, 
 
 } // namespace llmq
 
-#endif //RAPTOREUM_QUORUMS_COMMITMENT_H
+#endif //COINRAC_QUORUMS_COMMITMENT_H

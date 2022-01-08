@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_DETERMINISTICMNS_H
-#define RAPTOREUM_DETERMINISTICMNS_H
+#ifndef COINRAC_DETERMINISTICMNS_H
+#define COINRAC_DETERMINISTICMNS_H
 
 #include "arith_uint256.h"
 #include "bls/bls.h"
@@ -664,4 +664,4 @@ private:
 
 extern CDeterministicMNManager* deterministicMNManager;
 
-#endif //RAPTOREUM_DETERMINISTICMNS_H
+#endif //COINRAC_DETERMINISTICMNS_H

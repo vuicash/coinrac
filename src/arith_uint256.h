@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_ARITH_UINT256_H
-#define RAPTOREUM_ARITH_UINT256_H
+#ifndef COINRAC_ARITH_UINT256_H
+#define COINRAC_ARITH_UINT256_H
 #include "crypto/common.h"
 #include <assert.h>
 #include <cstring>
@@ -330,4 +330,4 @@ public:
 uint512 ArithToUint512(const arith_uint512 &);
 arith_uint512 UintToArith512(const uint512 &);
 
-#endif // RAPTOREUM_ARITH_UINT256_H
+#endif // COINRAC_ARITH_UINT256_H

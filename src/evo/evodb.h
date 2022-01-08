@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_EVODB_H
-#define RAPTOREUM_EVODB_H
+#ifndef COINRAC_EVODB_H
+#define COINRAC_EVODB_H
 
 #include "dbwrapper.h"
 #include "sync.h"
@@ -109,4 +109,4 @@ private:
 
 extern CEvoDB* evoDb;
 
-#endif //RAPTOREUM_EVODB_H
+#endif //COINRAC_EVODB_H

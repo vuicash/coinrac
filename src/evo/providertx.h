@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_PROVIDERTX_H
-#define RAPTOREUM_PROVIDERTX_H
+#ifndef COINRAC_PROVIDERTX_H
+#define COINRAC_PROVIDERTX_H
 
 #include "bls/bls.h"
 #include "consensus/validation.h"
@@ -265,4 +265,4 @@ bool CheckProUpServTx(const CTransaction& tx, const CBlockIndex* pindexPrev, CVa
 bool CheckProUpRegTx(const CTransaction& tx, const CBlockIndex* pindexPrev, CValidationState& state);
 bool CheckProUpRevTx(const CTransaction& tx, const CBlockIndex* pindexPrev, CValidationState& state);
 
-#endif //RAPTOREUM_PROVIDERTX_H
+#endif //COINRAC_PROVIDERTX_H

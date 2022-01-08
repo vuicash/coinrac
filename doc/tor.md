@@ -1,4 +1,4 @@
-TOR SUPPORT IN RAPTOREUM CORE
+TOR SUPPORT IN COINRAC CORE
 =======================
 
 It is possible to run Raptoreum Core as a Tor hidden service, and connect to such services.

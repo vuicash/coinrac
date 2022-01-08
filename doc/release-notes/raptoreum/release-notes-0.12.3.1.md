@@ -160,7 +160,7 @@ New Smartnode Information Dialog
 You can now double-click on your smartnode in `My Smartnodes` list on `Smartnodes` tab to reveal the new
 Smartnode Information dialog. It will show you some basic information as well as software versions reported by the
 smartnode. There is also a QR code now which encodes corresponding smartnode private key (the one you set with
-mnprivkey during MN setup and NOT the one that controls the 1000 RAPTOREUM collateral) which should make the process of pairing with
+mnprivkey during MN setup and NOT the one that controls the 1000 COINRAC collateral) which should make the process of pairing with
 mobile software allowing you to vote with your smartnode a bit easier (this software is still in development).
 
 Testnet fixes

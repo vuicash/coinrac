@@ -104,7 +104,7 @@ use old versions of Upstart and do not supply the start-stop-daemon utility.
 Copy raptoreumd.init to /etc/init.d/raptoreumd. Test by running `service raptoreumd start`.
 
 Using this script, you can adjust the path and flags to the raptoreumd program by
-setting the RAPTOREUMD and FLAGS environment variables in the file
+setting the COINRACD and FLAGS environment variables in the file
 /etc/sysconfig/raptoreumd. You can also use the DAEMONOPTS environment variable here.
 
 4e) Mac OS X

@@ -8,8 +8,8 @@
  *      Author: tri
  */
 
-#ifndef RAPTOREUM_SELECTION_H_
-#define RAPTOREUM_SELECTION_H_
+#ifndef COINRAC_SELECTION_H_
+#define COINRAC_SELECTION_H_
 
 #include "uint256.h"
 #include <string>
@@ -90,4 +90,4 @@ protected:
 
 };
 
-#endif /* RAPTOREUM_SELECTION_H_ */
+#endif /* COINRAC_SELECTION_H_ */

@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_QUORUMS_DKGSESSIONMGR_H
-#define RAPTOREUM_QUORUMS_DKGSESSIONMGR_H
+#ifndef COINRAC_QUORUMS_DKGSESSIONMGR_H
+#define COINRAC_QUORUMS_DKGSESSIONMGR_H
 
 #include "llmq/quorums_dkgsessionhandler.h"
 
@@ -77,4 +77,4 @@ extern CDKGSessionManager* quorumDKGSessionManager;
 
 } // namespace llmq
 
-#endif //RAPTOREUM_QUORUMS_DKGSESSIONMGR_H
+#endif //COINRAC_QUORUMS_DKGSESSIONMGR_H

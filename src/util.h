@@ -37,8 +37,8 @@
 
 // Uncomment the following line to enable debugging messages
 // or enable on a per file basis prior to inclusion of util.h
-//#define ENABLE_RAPTOREUM_DEBUG
-#ifdef ENABLE_RAPTOREUM_DEBUG
+//#define ENABLE_COINRAC_DEBUG
+#ifdef ENABLE_COINRAC_DEBUG
 #define DBG( x ) x
 #else
 #define DBG( x )

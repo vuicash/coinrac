@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_QUORUMS_INIT_H
-#define RAPTOREUM_QUORUMS_INIT_H
+#ifndef COINRAC_QUORUMS_INIT_H
+#define COINRAC_QUORUMS_INIT_H
 
 class CDBWrapper;
 class CEvoDB;
@@ -26,4 +26,4 @@ void StopLLMQSystem();
 void InterruptLLMQSystem();
 } // namespace llmq
 
-#endif //RAPTOREUM_QUORUMS_INIT_H
+#endif //COINRAC_QUORUMS_INIT_H

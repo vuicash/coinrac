@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_QUORUMS_SIGNING_SHARES_H
-#define RAPTOREUM_QUORUMS_SIGNING_SHARES_H
+#ifndef COINRAC_QUORUMS_SIGNING_SHARES_H
+#define COINRAC_QUORUMS_SIGNING_SHARES_H
 
 #include "bls/bls.h"
 #include "chainparams.h"
@@ -427,4 +427,4 @@ extern CSigSharesManager* quorumSigSharesManager;
 
 } // namespace llmq
 
-#endif //RAPTOREUM_QUORUMS_SIGNING_SHARES_H
+#endif //COINRAC_QUORUMS_SIGNING_SHARES_H

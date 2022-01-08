@@ -413,7 +413,7 @@ class BitcoinTestFramework(object):
             self.set_genesis_mocktime()
             for i in range(MAX_NODES):
                 datadir = initialize_datadir(self.options.cachedir, i)
-                args = [os.getenv("RAPTOREUMD", "raptoreumd"), "-server", "-keypool=1", "-datadir=" + datadir, "-discover=0", "-mocktime="+str(GENESISTIME)]
+                args = [os.getenv("COINRACD", "raptoreumd"), "-server", "-keypool=1", "-datadir=" + datadir, "-discover=0", "-mocktime="+str(GENESISTIME)]
                 if i > 0:
                     args.append("-connect=127.0.0.1:" + str(p2p_port(0)))
                 if extra_args is not None:

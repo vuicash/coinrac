@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_STACKTRACES_H
-#define RAPTOREUM_STACKTRACES_H
+#ifndef COINRAC_STACKTRACES_H
+#define COINRAC_STACKTRACES_H
 
 #include <string>
 #include <sstream>
@@ -40,4 +40,4 @@ inline std::string GetExceptionWhat(const T& e)
 void RegisterPrettyTerminateHander();
 void RegisterPrettySignalHandlers();
 
-#endif//RAPTOREUM_STACKTRACES_H
+#endif//COINRAC_STACKTRACES_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_UNORDERED_LRU_CACHE_H
-#define RAPTOREUM_UNORDERED_LRU_CACHE_H
+#ifndef COINRAC_UNORDERED_LRU_CACHE_H
+#define COINRAC_UNORDERED_LRU_CACHE_H
 
 #include <unordered_map>
 
@@ -122,4 +122,4 @@ private:
     }
 };
 
-#endif // RAPTOREUM_UNORDERED_LRU_CACHE_H
+#endif // COINRAC_UNORDERED_LRU_CACHE_H

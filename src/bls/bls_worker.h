@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_CRYPTO_BLS_WORKER_H
-#define RAPTOREUM_CRYPTO_BLS_WORKER_H
+#ifndef COINRAC_CRYPTO_BLS_WORKER_H
+#define COINRAC_CRYPTO_BLS_WORKER_H
 
 #include "bls.h"
 
@@ -203,4 +203,4 @@ private:
     }
 };
 
-#endif //RAPTOREUM_CRYPTO_BLS_WORKER_H
+#endif //COINRAC_CRYPTO_BLS_WORKER_H

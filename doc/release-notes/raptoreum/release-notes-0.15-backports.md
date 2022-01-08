@@ -346,7 +346,7 @@
 - [`7e4318dda`](https://github.com/raptoreum/raptoreum/commit/7e4318dda) Merge bitcoin#8329: Consensus: MOVEONLY: Move functions for tx verification (#3030)
 - [`a4f046cd0`](https://github.com/raptoreum/raptoreum/commit/a4f046cd0) adjust formatting from review configure.ac
 - [`0eae9ed90`](https://github.com/raptoreum/raptoreum/commit/0eae9ed90) remove witness comment/text
-- [`2b9216e98`](https://github.com/raptoreum/raptoreum/commit/2b9216e98) /s/BTC/RAPTOREUM
+- [`2b9216e98`](https://github.com/raptoreum/raptoreum/commit/2b9216e98) /s/BTC/COINRAC
 - [`188f4a752`](https://github.com/raptoreum/raptoreum/commit/188f4a752) Merge #10735: Avoid static analyzer warnings regarding uninitialized arguments
 - [`c097ab84d`](https://github.com/raptoreum/raptoreum/commit/c097ab84d) Merge #10840: Remove duplicate include
 - [`d7057d429`](https://github.com/raptoreum/raptoreum/commit/d7057d429) Merge #10766: Building Environment: Set ARFLAGS to cr

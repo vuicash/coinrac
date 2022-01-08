@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_QUORUMS_INSTANTSEND_H
-#define RAPTOREUM_QUORUMS_INSTANTSEND_H
+#ifndef COINRAC_QUORUMS_INSTANTSEND_H
+#define COINRAC_QUORUMS_INSTANTSEND_H
 
 #include "quorums_signing.h"
 
@@ -178,4 +178,4 @@ bool IsInstantSendEnabled();
 
 } // namespace llmq
 
-#endif//RAPTOREUM_QUORUMS_INSTANTSEND_H
+#endif//COINRAC_QUORUMS_INSTANTSEND_H

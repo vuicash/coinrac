@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_SIMPLIFIEDMNS_H
-#define RAPTOREUM_SIMPLIFIEDMNS_H
+#ifndef COINRAC_SIMPLIFIEDMNS_H
+#define COINRAC_SIMPLIFIEDMNS_H
 
 #include "bls/bls.h"
 #include "merkleblock.h"
@@ -148,4 +148,4 @@ public:
 
 bool BuildSimplifiedMNListDiff(const uint256& baseBlockHash, const uint256& blockHash, CSimplifiedMNListDiff& mnListDiffRet, std::string& errorRet);
 
-#endif //RAPTOREUM_SIMPLIFIEDMNS_H
+#endif //COINRAC_SIMPLIFIEDMNS_H

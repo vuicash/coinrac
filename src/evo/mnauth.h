@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_MNAUTH_H
-#define RAPTOREUM_MNAUTH_H
+#ifndef COINRAC_MNAUTH_H
+#define COINRAC_MNAUTH_H
 
 #include "bls/bls.h"
 #include "serialize.h"
@@ -56,4 +56,4 @@ public:
 };
 
 
-#endif //RAPTOREUM_MNAUTH_H
+#endif //COINRAC_MNAUTH_H
