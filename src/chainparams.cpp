@@ -460,10 +460,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x73;//r
-        pchMessageStart[1] = 0x75;//t
-        pchMessageStart[2] = 0x6e;//m
-        pchMessageStart[3] = 0x2f;//.
+        pchMessageStart[0] = 0x74;//r
+        pchMessageStart[1] = 0x76;//t
+        pchMessageStart[2] = 0x6f;//m
+        pchMessageStart[3] = 0x2e;//.
         nDefaultPort = 16789;
         nPruneAfterHeight = 100000;
         //FindMainNetGenesisBlock(1614369600, 0x20001fff, "main");
