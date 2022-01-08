@@ -7,7 +7,7 @@
 #include "data/proposals_valid.json.h"
 #include "data/proposals_invalid.json.h"
 
-#include "test/test_raptoreum.h"
+#include "test/test_coinrac.h"
 
 #include <iostream>
 #include <fstream>

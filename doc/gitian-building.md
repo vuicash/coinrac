@@ -11,7 +11,7 @@ the same, tested dependencies are used and statically built into the executable.
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
 These results are compared and only if they match, the build is accepted and uploaded
-to raptoreum.org.
+to coinrac.org.
 
 More independent Gitian builders are needed, which is why this guide exists.
 It is preferred you follow these steps yourself instead of using someone else's
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing Gitian](#installing-gitian)
 - [Setting up the Gitian image](#setting-up-the-gitian-image)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Coinrac Core](#building-raptoreum-core)
+- [Building Coinrac Core](#building-coinrac-core)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -314,8 +314,8 @@ Clone the git repositories for Coinrac Core and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/raptoreum/raptoreum
-git clone https://github.com/raptoreum/gitian.sigs.git
+git clone https://github.com/coinrac/coinrac
+git clone https://github.com/coinrac/gitian.sigs.git
 ```
 
 Setting up the Gitian image
@@ -376,12 +376,12 @@ tail -f var/build.log
 Output from `gbuild` will look something like
 
 ```bash
-    Initialized empty Git repository in /home/debian/gitian-builder/inputs/raptoreum/.git/
+    Initialized empty Git repository in /home/debian/gitian-builder/inputs/coinrac/.git/
     remote: Counting objects: 57959, done.
     remote: Total 57959 (delta 0), reused 0 (delta 0), pack-reused 57958
     Receiving objects: 100% (57959/57959), 53.76 MiB | 484.00 KiB/s, done.
     Resolving deltas: 100% (41590/41590), done.
-    From https://github.com/raptoreum/raptoreum
+    From https://github.com/coinrac/coinrac
     ... (new tags, new branch etc)
     --- Building for bionic amd64 ---
     Stopping target if it is up
@@ -407,18 +407,18 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/crowning-/raptoreum.git
+URL=https://github.com/crowning-/coinrac.git
 COMMIT=b616fb8ef0d49a919b72b0388b091aaec5849b96
-./bin/gbuild --commit raptoreum=${COMMIT} --url raptoreum=${URL} ../raptoreum/contrib/gitian-descriptors/gitian-linux.yml
-./bin/gbuild --commit raptoreum=${COMMIT} --url raptoreum=${URL} ../raptoreum/contrib/gitian-descriptors/gitian-win.yml
-./bin/gbuild --commit raptoreum=${COMMIT} --url raptoreum=${URL} ../raptoreum/contrib/gitian-descriptors/gitian-osx.yml
+./bin/gbuild --commit coinrac=${COMMIT} --url coinrac=${URL} ../coinrac/contrib/gitian-descriptors/gitian-linux.yml
+./bin/gbuild --commit coinrac=${COMMIT} --url coinrac=${URL} ../coinrac/contrib/gitian-descriptors/gitian-win.yml
+./bin/gbuild --commit coinrac=${COMMIT} --url coinrac=${URL} ../coinrac/contrib/gitian-descriptors/gitian-osx.yml
 ```
 
 Building fully offline
 -----------------------
 
 For building fully offline including attaching signatures to unsigned builds, the detached-sigs repository
-and the raptoreum git repository with the desired tag must both be available locally, and then gbuild must be
+and the coinrac git repository with the desired tag must both be available locally, and then gbuild must be
 told where to find them. It also requires an apt-cacher-ng which is fully-populated but set to offline mode, or
 manually disabling gitian-builder's use of apt-get to update the VM build environment.
 
@@ -437,7 +437,7 @@ cd /path/to/gitian-builder
 LXC_ARCH=amd64 LXC_SUITE=bionic on-target -u root apt-get update
 LXC_ARCH=amd64 LXC_SUITE=bionic on-target -u root \
   -e DEBIAN_FRONTEND=noninteractive apt-get --no-install-recommends -y install \
-  $( sed -ne '/^packages:/,/[^-] .*/ {/^- .*/{s/"//g;s/- //;p}}' ../raptoreum/contrib/gitian-descriptors/*|sort|uniq )
+  $( sed -ne '/^packages:/,/[^-] .*/ {/^- .*/{s/"//g;s/- //;p}}' ../coinrac/contrib/gitian-descriptors/*|sort|uniq )
 LXC_ARCH=amd64 LXC_SUITE=bionic on-target -u root apt-get -q -y purge grub
 LXC_ARCH=amd64 LXC_SUITE=bionic on-target -u root -e DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade
 ```
@@ -457,12 +457,12 @@ Then when building, override the remote URLs that gbuild would otherwise pull fr
 ```bash
 
 cd /some/root/path/
-git clone https://github.com/raptoreum/raptoreum-detached-sigs.git
+git clone https://github.com/coinrac/coinrac-detached-sigs.git
 
-BTCPATH=/some/root/path/raptoreum
-SIGPATH=/some/root/path/raptoreum-detached-sigs
+BTCPATH=/some/root/path/coinrac
+SIGPATH=/some/root/path/coinrac-detached-sigs
 
-./bin/gbuild --url raptoreum=${BTCPATH},signature=${SIGPATH} ../raptoreum/contrib/gitian-descriptors/gitian-win-signer.yml
+./bin/gbuild --url coinrac=${BTCPATH},signature=${SIGPATH} ../coinrac/contrib/gitian-descriptors/gitian-win-signer.yml
 ```
 
 Signing externally
@@ -477,9 +477,9 @@ When you execute `gsign` you will get an error from GPG, which can be ignored. C
 in `gitian.sigs` to your signing machine and do
 
 ```bash
-    gpg --detach-sign ${VERSION}-linux/${SIGNER}/raptoreum-linux-build.assert
-    gpg --detach-sign ${VERSION}-win/${SIGNER}/raptoreum-win-build.assert
-    gpg --detach-sign ${VERSION}-osx-unsigned/${SIGNER}/raptoreum-osx-build.assert
+    gpg --detach-sign ${VERSION}-linux/${SIGNER}/coinrac-linux-build.assert
+    gpg --detach-sign ${VERSION}-win/${SIGNER}/coinrac-win-build.assert
+    gpg --detach-sign ${VERSION}-osx-unsigned/${SIGNER}/coinrac-osx-build.assert
 ```
 
 This will create the `.sig` files that can be committed together with the `.assert` files to assert your
@@ -489,6 +489,6 @@ Uploading signatures (not yet implemented)
 ---------------------
 
 In the future it will be possible to push your signatures (both the `.assert` and `.assert.sig` files) to the
-[raptoreum/gitian.sigs](https://github.com/raptoreum/gitian.sigs/) repository, or if that's not possible to create a pull
+[coinrac/gitian.sigs](https://github.com/coinrac/gitian.sigs/) repository, or if that's not possible to create a pull
 request.
 There will be an official announcement when this repository is online.

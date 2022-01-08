@@ -39,7 +39,7 @@ class TestNode(NodeConnCB):
 
 class LLMQCoinbaseCommitmentsTest(CoinracTestFramework):
     def set_test_params(self):
-        self.set_raptoreum_test_params(6, 5, fast_dip3_enforcement=True)
+        self.set_coinrac_test_params(6, 5, fast_dip3_enforcement=True)
 
     def run_test(self):
         self.test_node = TestNode()

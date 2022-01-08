@@ -50,4 +50,4 @@ situations but should be discussed in public in advance.
 
 See also
 ----------
-- [raptoreum-seeder](https://github.com/nightlyraptoreum/raptoreum-seeder) is a reference implementation of a DNS seed.
+- [coinrac-seeder](https://github.com/nightlycoinrac/coinrac-seeder) is a reference implementation of a DNS seed.

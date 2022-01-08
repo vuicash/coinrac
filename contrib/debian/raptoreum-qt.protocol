@@ -1,6 +1,6 @@
 [Protocol]
-exec=raptoreum-qt '%u'
-protocol=raptoreum
+exec=coinrac-qt '%u'
+protocol=coinrac
 input=none
 output=none
 helper=true

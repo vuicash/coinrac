@@ -1,2 +1,2 @@
-contrib/raptoreumd.bash-completion	raptoreumd
-contrib/raptoreum-cli.bash-completion    raptoreum-cli
+contrib/coinracd.bash-completion	coinracd
+contrib/coinrac-cli.bash-completion    coinrac-cli

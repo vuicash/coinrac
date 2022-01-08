@@ -34,7 +34,7 @@ for(int i = 0; i < targets.size(); i++) {
         "JOB_NUMBER=${BUILD_NUMBER}",
       ]
       withEnv(env) {
-        def builderImageName="raptoreum-builder-${target}"
+        def builderImageName="coinrac-builder-${target}"
 
         def builderImage
         stage("${target}/builder-image") {
@@ -44,49 +44,49 @@ for(int i = 0; i < targets.size(); i++) {
         builderImage.inside("-t") {
           // copy source into fixed path
           // we must build under the same path everytime as otherwise caches won't work properly
-          sh "cp -ra ${pwd}/. /raptoreum-src/"
+          sh "cp -ra ${pwd}/. /coinrac-src/"
 
           // restore cache
           def hasCache = false
           try {
-            copyArtifacts(projectName: "raptoreum-raptoreum/${BRANCH_NAME}", optional: true, selector: lastSuccessful(), filter: "ci-cache-${target}.tar.gz")
+            copyArtifacts(projectName: "coinrac-coinrac/${BRANCH_NAME}", optional: true, selector: lastSuccessful(), filter: "ci-cache-${target}.tar.gz")
           } catch (Exception e) {
           }
           if (fileExists("ci-cache-${target}.tar.gz")) {
             hasCache = true
-            echo "Using cache from raptoreum-raptoreum/${BRANCH_NAME}"
+            echo "Using cache from coinrac-coinrac/${BRANCH_NAME}"
           } else {
             try {
-              copyArtifacts(projectName: 'raptoreum-raptoreum/develop', optional: true, selector: lastSuccessful(), filter: "ci-cache-${target}.tar.gz");
+              copyArtifacts(projectName: 'coinrac-coinrac/develop', optional: true, selector: lastSuccessful(), filter: "ci-cache-${target}.tar.gz");
             } catch (Exception e) {
             }
             if (fileExists("ci-cache-${target}.tar.gz")) {
               hasCache = true
-              echo "Using cache from raptoreum-raptoreum/develop"
+              echo "Using cache from coinrac-coinrac/develop"
             }
           }
 
           if (hasCache) {
-            sh "cd /raptoreum-src && tar xzf ${pwd}/ci-cache-${target}.tar.gz"
+            sh "cd /coinrac-src && tar xzf ${pwd}/ci-cache-${target}.tar.gz"
           } else {
-            sh "mkdir -p /raptoreum-src/ci-cache-${target}"
+            sh "mkdir -p /coinrac-src/ci-cache-${target}"
           }
 
           stage("${target}/depends") {
-            sh 'cd /raptoreum-src && ./ci/build_depends.sh'
+            sh 'cd /coinrac-src && ./ci/build_depends.sh'
           }
           stage("${target}/build") {
-            sh 'cd /raptoreum-src && ./ci/build_src.sh'
+            sh 'cd /coinrac-src && ./ci/build_src.sh'
           }
           stage("${target}/test") {
-            sh 'cd /raptoreum-src && ./ci/test_unittests.sh'
+            sh 'cd /coinrac-src && ./ci/test_unittests.sh'
           }
           stage("${target}/test") {
-            sh 'cd /raptoreum-src && ./ci/test_integrationtests.sh'
+            sh 'cd /coinrac-src && ./ci/test_integrationtests.sh'
           }
 
           // archive cache and copy it into the jenkins workspace
-          sh "cd /raptoreum-src && tar czfv ci-cache-${target}.tar.gz ci-cache-${target} && cp ci-cache-${target}.tar.gz ${pwd}/"
+          sh "cd /coinrac-src && tar czfv ci-cache-${target}.tar.gz ci-cache-${target} && cp ci-cache-${target}.tar.gz ${pwd}/"
         }
 
         // upload cache

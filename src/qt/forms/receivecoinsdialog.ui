@@ -316,7 +316,7 @@
   <tabstop>removeRequestButton</tabstop>
  </tabstops>
  <resources>
-  <include location="../raptoreum.qrc"/>
+  <include location="../coinrac.qrc"/>
  </resources>
  <connections/>
 </ui>

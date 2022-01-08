@@ -35,7 +35,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.raptoreum.Coinrac-Qt</string>
+  <string>org.coinrac.Coinrac-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -43,10 +43,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.raptoreum.CoinracPayment</string>
+      <string>org.coinrac.CoinracPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>raptoreum</string>
+        <string>coinrac</string>
       </array>
     </dict>
   </array>
@@ -55,7 +55,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.raptoreum.paymentrequest</string>
+      <string>org.coinrac.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>Coinrac payment request</string>
       <key>UTTypeConformsTo</key>
@@ -65,10 +65,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-raptoreum-payment-request</string>
+        <string>application/x-coinrac-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>raptoreummentrequest</string>
+          <string>coinracmentrequest</string>
         </array>
       </dict>
     </dict>
@@ -81,7 +81,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.raptoreum.paymentrequest</string>
+        <string>org.coinrac.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

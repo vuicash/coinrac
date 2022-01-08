@@ -40,9 +40,9 @@ SendCoinsEntry::SendCoinsEntry(const PlatformStyle *_platformStyle, QWidget *par
     ui->deleteButton_is->setIcon(QIcon(":/icons/remove"));
     ui->deleteButton_s->setIcon(QIcon(":/icons/remove"));
       
-    // normal raptoreum address field
+    // normal coinrac address field
     GUIUtil::setupAddressWidget(ui->payTo, this);
-    // just a label for displaying raptoreum address(es)
+    // just a label for displaying coinrac address(es)
     ui->payTo_is->setFont(GUIUtil::fixedPitchFont());
 
     // Connect signals

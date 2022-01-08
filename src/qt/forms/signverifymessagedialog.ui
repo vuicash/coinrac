@@ -352,7 +352,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../raptoreum.qrc"/>
+  <include location="../coinrac.qrc"/>
  </resources>
  <connections/>
 </ui>

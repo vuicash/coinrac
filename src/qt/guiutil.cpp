@@ -204,8 +204,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no raptoreum: URI
-    if(!uri.isValid() || uri.scheme() != QString("raptoreum"))
+    // return if URI is not valid or is no coinrac: URI
+    if(!uri.isValid() || uri.scheme() != QString("coinrac"))
         return false;
 
     SendCoinsRecipient rv;
@@ -271,13 +271,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert raptoreum:// to raptoreum:
+    // Convert coinrac:// to coinrac:
     //
-    //    Cannot handle this later, because raptoreum:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because coinrac:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("raptoreum://", Qt::CaseInsensitive))
+    if(uri.startsWith("coinrac://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 7, "raptoreum:");
+        uri.replace(0, 7, "coinrac:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -285,7 +285,7 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("raptoreum:%1").arg(info.address);
+    QString ret = QString("coinrac:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -485,7 +485,7 @@ void openConfigfile()
 {
     fs::path pathConfig = GetConfigFile(gArgs.GetArg("-conf", BITCOIN_CONF_FILENAME));
 
-    /* Open raptoreum.conf with the associated application */
+    /* Open coinrac.conf with the associated application */
     if (fs::exists(pathConfig))
         QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
 }
@@ -784,8 +784,8 @@ fs::path static GetAutostartFilePath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "raptoreumcore.desktop";
-    return GetAutostartDir() / strprintf("raptoreumcore-%s.lnk", chain);
+        return GetAutostartDir() / "coinraccore.desktop";
+    return GetAutostartDir() / strprintf("coinraccore-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -824,7 +824,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
         std::string chain = ChainNameFromCommandLine();
-        // Write a raptoreumcore.desktop file to the autostart directory:
+        // Write a coinraccore.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)

@@ -5,7 +5,7 @@
 
 #include "bls/bls.h"
 #include "bls/bls_batchverifier.h"
-#include "test/test_raptoreum.h"
+#include "test/test_coinrac.h"
 
 #include <boost/test/unit_test.hpp>
 

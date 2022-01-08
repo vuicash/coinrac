@@ -6,14 +6,14 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/raptoreum
-src/raptoreumd
-src/raptoreum-cli
-src/raptoreum-tx
-src/test/test_raptoreum
-src/test/test_raptoreum_fuzzy
-src/qt/test/test_raptoreum-qt
-src/bench/bench_raptoreum
+src/coinrac
+src/coinracd
+src/coinrac-cli
+src/coinrac-tx
+src/test/test_coinrac
+src/test/test_coinrac_fuzzy
+src/qt/test/test_coinrac-qt
+src/bench/bench_coinrac
 
 # autoreconf
 Makefile.in
@@ -36,8 +36,8 @@ config.log
 config.status
 configure
 libtool
-src/config/raptoreum-config.h
-src/config/raptoreum-config.h.in
+src/config/coinrac-config.h
+src/config/coinrac-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -82,13 +82,13 @@ libconftest.dylib*
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-raptoreum-qt
+coinrac-qt
 Coinrac-Qt.app
 !/depends/Makefile
 
 # Unit-tests
 Makefile.test
-raptoreum-qt_test
+coinrac-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -101,7 +101,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_raptoreum.coverage/
+test_coinrac.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -119,15 +119,15 @@ test/cache/*
 .autotools
 /doc/doxygen/
 
-libraptoreumconsensus.pc
+libcoinracconsensus.pc
 contrib/devtools/split-debug.sh
-src/qt/raptoreum-qt.bash
+src/qt/coinrac-qt.bash
 qa/pull-tester/tests-config.sh
 
 #development symlinks
-raptoreum-cli
-raptoreumd
-raptoreum-qt
+coinrac-cli
+coinracd
+coinrac-qt
 make
 
 /docker/bin

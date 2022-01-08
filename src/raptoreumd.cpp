@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/raptoreum-config.h"
+#include "config/coinrac-config.h"
 #endif
 
 #include "chainparams.h"
@@ -33,7 +33,7 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Coinrac (https://www.raptoreum.org/),
+ * This is the developer documentation of the reference client for an experimental new digital currency called Coinrac (https://www.coinrac.org/),
  * which enables instant payments to anyone, anywhere in the world. Coinrac uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
@@ -73,7 +73,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/raptoreum.conf are parsed in qt/raptoreum.cpp's main()
+    // If Qt is used, parameters/coinrac.conf are parsed in qt/coinrac.cpp's main()
     gArgs.ParseParameters(argc, argv);
 
     if (gArgs.IsArgSet("-printcrashinfo")) {
@@ -93,7 +93,7 @@ bool AppInit(int argc, char* argv[])
         else
         {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  raptoreumd [options]                     " + strprintf(_("Start %s Daemon"), _(PACKAGE_NAME)) + "\n";
+                  "  coinracd [options]                     " + strprintf(_("Start %s Daemon"), _(PACKAGE_NAME)) + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -133,7 +133,7 @@ bool AppInit(int argc, char* argv[])
         // Error out when loose non-argument tokens are encountered on command line
         for (int i = 1; i < argc; i++) {
             if (!IsSwitchChar(argv[i][0])) {
-                fprintf(stderr, "Error: Command line contains unexpected token '%s', see raptoreumd -h for a list of options.\n", argv[i]);
+                fprintf(stderr, "Error: Command line contains unexpected token '%s', see coinracd -h for a list of options.\n", argv[i]);
                 exit(EXIT_FAILURE);
             }
         }
@@ -203,7 +203,7 @@ int main(int argc, char* argv[])
 
     SetupEnvironment();
 
-    // Connect raptoreumd signal handlers
+    // Connect coinracd signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);

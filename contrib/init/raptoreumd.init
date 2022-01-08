@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  raptoreumd The Coinrac Core server.
+#  coinracd The Coinrac Core server.
 #
 #
 # chkconfig: 345 80 20
-# description: raptoreumd
-# processname: raptoreumd
+# description: coinracd
+# processname: coinracd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/raptoreumd, see below
-if [ -f /etc/sysconfig/raptoreumd ]; then
-        . /etc/sysconfig/raptoreumd
+# you can override defaults in /etc/sysconfig/coinracd, see below
+if [ -f /etc/sysconfig/coinracd ]; then
+        . /etc/sysconfig/coinracd
 fi
 
 RETVAL=0
 
-prog=raptoreumd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/raptoreumd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/raptoreumd}
+prog=coinracd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/coinracd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/coinracd}
 
-# raptoreumd defaults to /usr/bin/raptoreumd, override with BITCOIND_BIN
-raptoreumd=${BITCOIND_BIN-/usr/bin/raptoreumd}
+# coinracd defaults to /usr/bin/coinracd, override with BITCOIND_BIN
+coinracd=${BITCOIND_BIN-/usr/bin/coinracd}
 
-# raptoreumd opts default to -disablewallet, override with BITCOIND_OPTS
-raptoreumd_opts=${BITCOIND_OPTS--disablewallet}
+# coinracd opts default to -disablewallet, override with BITCOIND_OPTS
+coinracd_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $raptoreumd $raptoreumd_opts
+    daemon $DAEMONOPTS $coinracd $coinracd_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

@@ -16,7 +16,7 @@ Simulate and check DKG errors
 
 class LLMQDKGErrors(CoinracTestFramework):
     def set_test_params(self):
-        self.set_raptoreum_test_params(6, 5, [["-whitelist=127.0.0.1"]] * 6, fast_dip3_enforcement=True)
+        self.set_coinrac_test_params(6, 5, [["-whitelist=127.0.0.1"]] * 6, fast_dip3_enforcement=True)
 
     def run_test(self):
 

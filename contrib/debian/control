@@ -1,8 +1,8 @@
-Source: raptoreum
+Source: coinrac
 Section: utils
 Priority: optional
-Maintainer: Holger Schinzel <holger@raptoreum.org>
-Uploaders: Holger Schinzel <holger@raptoreum.org>
+Maintainer: Holger Schinzel <holger@coinrac.org>
+Uploaders: Holger Schinzel <holger@coinrac.org>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -26,11 +26,11 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://www.raptoreum.org/
-Vcs-Git: git://github.com/raptoreum/raptoreum.git
-Vcs-Browser: https://github.com/raptoreum/raptoreum
+Homepage: https://www.coinrac.org/
+Vcs-Git: git://github.com/coinrac/coinrac.git
+Vcs-Browser: https://github.com/coinrac/coinrac
 
-Package: raptoreumd
+Package: coinracd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -40,10 +40,10 @@ Description: peer-to-peer network based digital currency - daemon
  and issuing money are carried out collectively by the network. Coinrac Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides the daemon, raptoreumd, and the CLI tool
- raptoreum-cli to interact with the daemon.
+ This package provides the daemon, coinracd, and the CLI tool
+ coinrac-cli to interact with the daemon.
 
-Package: raptoreum-qt
+Package: coinrac-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
@@ -55,7 +55,7 @@ Description: peer-to-peer network based digital currency - Qt GUI
  .
  This package provides Coinrac-Qt, a GUI for Coinrac based on Qt.
 
-Package: raptoreum-tx
+Package: coinrac-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
@@ -65,6 +65,6 @@ Description: peer-to-peer digital currency - standalone transaction tool
  and issuing money are carried out collectively by the network. Coinrac Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides raptoreum-tx, a command-line transaction creation
- tool which can be used without a raptoreum daemon.  Some means of
+ This package provides coinrac-tx, a command-line transaction creation
+ tool which can be used without a coinrac daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

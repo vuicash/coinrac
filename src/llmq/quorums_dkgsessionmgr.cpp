@@ -41,7 +41,7 @@ void CDKGSessionManager::StartMessageHandlerPool()
     }
 
     messageHandlerPool.resize(2);
-    RenameThreadPool(messageHandlerPool, "raptoreum-q-msg");
+    RenameThreadPool(messageHandlerPool, "coinrac-q-msg");
 }
 
 void CDKGSessionManager::StopMessageHandlerPool()

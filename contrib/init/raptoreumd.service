@@ -3,13 +3,13 @@ Description=Coinrac's distributed currency daemon
 After=network.target
 
 [Service]
-User=raptoreumcore
-Group=raptoreumcore
+User=coinraccore
+Group=coinraccore
 
 Type=forking
-PIDFile=/var/lib/raptoreumd/raptoreumd.pid
-ExecStart=/usr/bin/raptoreumd -daemon -pid=/var/lib/raptoreumd/raptoreumd.pid \
--conf=/etc/raptoreumcore/raptoreum.conf -datadir=/var/lib/raptoreumd -disablewallet
+PIDFile=/var/lib/coinracd/coinracd.pid
+ExecStart=/usr/bin/coinracd -daemon -pid=/var/lib/coinracd/coinracd.pid \
+-conf=/etc/coinraccore/coinrac.conf -datadir=/var/lib/coinracd -disablewallet
 
 Restart=always
 PrivateTmp=true

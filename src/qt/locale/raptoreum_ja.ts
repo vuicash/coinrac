@@ -294,8 +294,8 @@
         <translation>受取 (&amp;R)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and raptoreum: URIs)</source>
-        <translation>送金を要求 (QRコードとraptoreum:URIを生成)</translation>
+        <source>Request payments (generates QR codes and coinrac: URIs)</source>
+        <translation>送金を要求 (QRコードとcoinrac:URIを生成)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -482,8 +482,8 @@
         <translation>URIを開く… (&amp;U)</translation>
     </message>
     <message>
-        <source>Open a raptoreum: URI or payment request</source>
-        <translation>raptoreum: URIまたは送金リクエストを開く</translation>
+        <source>Open a coinrac: URI or payment request</source>
+        <translation>coinrac: URIまたは送金リクエストを開く</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1425,9 +1425,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/raptoreum/</source>
+https://www.transifex.com/projects/p/coinrac/</source>
         <translation>希望の言語がない場合または翻訳に問題がある場合はこちらで翻訳にご協力ください。:
-https://www.transifex.com/projects/p/raptoreum/</translation>
+https://www.transifex.com/projects/p/coinrac/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1738,7 +1738,7 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>支払いリクエストのエラー</translation>
     </message>
     <message>
-        <source>Cannot start raptoreum: click-to-pay handler</source>
+        <source>Cannot start coinrac: click-to-pay handler</source>
         <translation>Coinrac を起動できません: click-to-pay ハンドラー</translation>
     </message>
     <message>
@@ -2627,7 +2627,7 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>カスタマイズされた手数料が1000duffsに設定され、トランザクションが250 bytesしかなかった場合、キロバイトあたりでは250 duffsしか手数料を支払いませんが&lt;br /&gt;最低でも1000 duffs支払います。1キロバイト以上のトランザクションに対しては、1キロバイトあたり1000duffs支払います。</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for raptoreum transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for coinrac transactions than the network can process.</source>
         <translation>最低限の手数料しか支払わなくても、トランザクション量以上のスペースが対象ブロックにあれば問題ありません。&lt;br /&gt;しかし、ネットワークが処理できる以上のCoinracのトランザクション需要があれば、処理されないトランザクションになり得ることに注意してください。</translation>
     </message>
     <message>
@@ -2878,7 +2878,7 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>メッセージ：</translation>
     </message>
     <message>
-        <source>A message that was attached to the raptoreum: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Coinrac network.</source>
+        <source>A message that was attached to the coinrac: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Coinrac network.</source>
         <translation>Coinrac: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはCoinracネットワークを経由して送信されるわけではありません。</translation>
     </message>
     <message>
@@ -3670,7 +3670,7 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
     </message>
 </context>
 <context>
-    <name>raptoreum-core</name>
+    <name>coinrac-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>指定のアドレスへバインドし、その上で常にリッスンします。IPv6 は [host]:port 番号と表記します</translation>

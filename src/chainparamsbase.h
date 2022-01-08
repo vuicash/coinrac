@@ -10,7 +10,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between raptoreum-cli and raptoreumd)
+ * CBaseChainParams defines the base parameters (shared between coinrac-cli and coinracd)
  * of a given instance of the Coinrac system.
  */
 class CBaseChainParams

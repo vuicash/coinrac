@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Coinrac"
-            VALUE "FileDescription",    "raptoreum-tx (CLI Coinrac transaction editor utility)"
+            VALUE "FileDescription",    "coinrac-tx (CLI Coinrac transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "raptoreum-tx"
+            VALUE "InternalName",       "coinrac-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "raptoreum-tx.exe"
-            VALUE "ProductName",        "raptoreum-tx"
+            VALUE "OriginalFilename",   "coinrac-tx.exe"
+            VALUE "ProductName",        "coinrac-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

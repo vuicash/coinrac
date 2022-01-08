@@ -1,15 +1,15 @@
-# bash programmable completion for raptoreumd(1) and raptoreum-qt(1)
+# bash programmable completion for coinracd(1) and coinrac-qt(1)
 # Copyright (c) 2012-2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_raptoreumd() {
+_coinracd() {
     local cur prev words=() cword
-    local raptoreumd
+    local coinracd
 
-    # save and use original argument to invoke raptoreumd for -help
+    # save and use original argument to invoke coinracd for -help
     # it might not be in $PATH
-    raptoreumd="$1"
+    coinracd="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -33,7 +33,7 @@ _raptoreumd() {
             # only parse -help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
                 local helpopts
-                helpopts=$($raptoreumd -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($coinracd -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
                 COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
             fi
 
@@ -45,7 +45,7 @@ _raptoreumd() {
             ;;
     esac
 } &&
-complete -F _raptoreumd raptoreumd raptoreum-qt
+complete -F _coinracd coinracd coinrac-qt
 
 # Local variables:
 # mode: shell-script

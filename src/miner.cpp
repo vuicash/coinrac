@@ -539,7 +539,7 @@ void static CoinracMiner(const CChainParams& chainparams)
 {
     LogPrintf("CoinracMiner -- started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("raptoreum-miner");
+    RenameThread("coinrac-miner");
 
     unsigned int nExtraNonce = 0;
 

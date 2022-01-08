@@ -1,25 +1,25 @@
-# /etc/conf.d/raptoreumd: config file for /etc/init.d/raptoreumd
+# /etc/conf.d/coinracd: config file for /etc/init.d/coinracd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/raptoreumcore/raptoreum.conf"
+#BITCOIND_CONFIGFILE="/etc/coinraccore/coinrac.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/raptoreumd"
+#BITCOIND_PIDDIR="/var/run/coinracd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/raptoreumd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/coinracd.pid"
 
-# Where to write raptoreumd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/raptoreumd"
+# Where to write coinracd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/coinracd"
 
-# User and group to own raptoreumd process
-#BITCOIND_USER="raptoreumcore"
-#BITCOIND_GROUP="raptoreumcore"
+# User and group to own coinracd process
+#BITCOIND_USER="coinraccore"
+#BITCOIND_GROUP="coinraccore"
 
-# Path to raptoreumd executable
-#BITCOIND_BIN="/usr/bin/raptoreumd"
+# Path to coinracd executable
+#BITCOIND_BIN="/usr/bin/coinracd"
 
-# Nice value to run raptoreumd under
+# Nice value to run coinracd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

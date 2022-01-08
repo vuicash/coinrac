@@ -2,26 +2,26 @@
 
 # backward compatibility for existing gentoo layout 
 #
-if [ -d "/var/lib/raptoreumcore/.raptoreumcore" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/raptoreumcore/.raptoreumcore"
+if [ -d "/var/lib/coinraccore/.coinraccore" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/coinraccore/.coinraccore"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/raptoreumd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/coinracd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/raptoreumcore/raptoreum.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/raptoreumd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/raptoreumd.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/coinraccore/coinrac.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/coinracd}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/coinracd.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-raptoreumcore}}
-BITCOIND_GROUP=${BITCOIND_GROUP:-raptoreumcore}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/raptoreumd}
+BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-coinraccore}}
+BITCOIND_GROUP=${BITCOIND_GROUP:-coinraccore}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/coinracd}
 BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
 BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
 
 name="Coinrac Core Daemon"
 description="Coinrac cryptocurrency P2P network daemon"
 
-command="/usr/bin/raptoreumd"
+command="/usr/bin/coinracd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -71,7 +71,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run raptoreumd."
+		eerror "ERROR: You must set a secure rpcpassword to run coinracd."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "

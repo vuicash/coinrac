@@ -1,2 +1,2 @@
-usr/local/bin/raptoreumd usr/bin
-usr/local/bin/raptoreum-cli usr/bin
+usr/local/bin/coinracd usr/bin
+usr/local/bin/coinrac-cli usr/bin

@@ -17,7 +17,7 @@ rm -f src/test/buildenv.py
 rm -f src/test/data/*.json.h
 rm -f src/test/data/*.raw.h
 
-rm -rf test_bitcoin.coverage/ raptoreum-gtest.coverage/ total.coverage/
+rm -rf test_bitcoin.coverage/ coinrac-gtest.coverage/ total.coverage/
 
 rm -rf cache
 rm -rf target
@@ -69,10 +69,10 @@ clean_dirs .libs
 clean_dirs __pycache__
 
 clean_exe src/bench/bench_bitcoin
-clean_exe src/raptoreum-cli
-clean_exe src/raptoreumd
-clean_exe src/raptoreum-gtest
-clean_exe src/raptoreum-tx
+clean_exe src/coinrac-cli
+clean_exe src/coinracd
+clean_exe src/coinrac-gtest
+clean_exe src/coinrac-tx
 clean_exe src/test/test_bitcoin
 
 clean_exe src/leveldb/db_bench

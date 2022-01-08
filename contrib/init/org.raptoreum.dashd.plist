@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.raptoreum.raptoreumd</string>
+	<string>org.coinrac.coinracd</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/raptoreumd</string>
+		<string>/usr/local/bin/coinracd</string>
 		<string>-daemon</string>
 	</array>
 	<key>RunAtLoad</key>

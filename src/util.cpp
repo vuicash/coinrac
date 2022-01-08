@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/raptoreum-config.h"
+#include "config/coinrac-config.h"
 #endif
 
 #include "util.h"
@@ -108,8 +108,8 @@ bool fLiteMode = false;
 */
 int nWalletBackups = 10;
 
-const char * const BITCOIN_CONF_FILENAME = "raptoreum.conf";
-const char * const BITCOIN_PID_FILENAME = "raptoreumd.pid";
+const char * const BITCOIN_CONF_FILENAME = "coinrac.conf";
+const char * const BITCOIN_PID_FILENAME = "coinracd.pid";
 
 ArgsManager gArgs;
 bool fPrintToConsole = false;
@@ -289,7 +289,7 @@ bool GetLogCategory(uint64_t *f, const std::string *str)
             *f = BCLog::ALL;
             return true;
         }
-        if (*str == "raptoreum") {
+        if (*str == "coinrac") {
             *f = BCLog::CHAINLOCKS
                 | BCLog::GOBJECT
                 | BCLog::INSTANTSEND
@@ -621,7 +621,7 @@ fs::path GetDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\CoinracCore
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\CoinracCore
     // Mac: ~/Library/Application Support/CoinracCore
-    // Unix: ~/.raptoreumcore
+    // Unix: ~/.coinraccore
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "CoinracCore";
@@ -637,7 +637,7 @@ fs::path GetDefaultDataDir()
     return pathRet / "Library/Application Support/CoinracCore";
 #else
     // Unix
-    return pathRet / ".raptoreumcore";
+    return pathRet / ".coinraccore";
 #endif
 #endif
 }
@@ -704,7 +704,7 @@ void ArgsManager::ReadConfigFile(const std::string& confPath)
 {
     fs::ifstream streamConfig(GetConfigFile(confPath));
     if (!streamConfig.good()){
-        // Create empty raptoreum.conf if it does not excist
+        // Create empty coinrac.conf if it does not excist
         FILE* configFile = fopen(GetConfigFile(confPath).string().c_str(), "a");
         if (configFile != nullptr)
             fclose(configFile);
@@ -718,7 +718,7 @@ void ArgsManager::ReadConfigFile(const std::string& confPath)
 
         for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
         {
-            // Don't overwrite existing settings so command line settings override raptoreum.conf
+            // Don't overwrite existing settings so command line settings override coinrac.conf
             std::string strKey = std::string("-") + it->string_key;
             std::string strValue = it->value[0];
             InterpretNegativeSetting(strKey, strValue);

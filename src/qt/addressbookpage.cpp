@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/raptoreum-config.h"
+#include "config/coinrac-config.h"
 #endif
 
 #include "addressbookpage.h"
@@ -232,7 +232,7 @@ void AddressBookPage::on_showAddressQRCode_clicked()
 
     dialog->setModel(model);
     dialog->setAttribute(Qt::WA_DeleteOnClose);
-    dialog->setInfo(tr("QR code"), "raptoreum:"+strAddress, "", strAddress);
+    dialog->setInfo(tr("QR code"), "coinrac:"+strAddress, "", strAddress);
     dialog->show();
 }
 

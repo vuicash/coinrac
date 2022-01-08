@@ -33,7 +33,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Coinrac"
-#define QAPP_ORG_DOMAIN "raptoreum.org"
+#define QAPP_ORG_DOMAIN "coinrac.org"
 #define QAPP_APP_NAME_DEFAULT "Coinrac-Qt"
 #define QAPP_APP_NAME_TESTNET "Coinrac-Qt-testnet"
 #define QAPP_APP_NAME_DEVNET "Coinrac-Qt-%s"

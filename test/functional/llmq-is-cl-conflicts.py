@@ -49,7 +49,7 @@ class TestNode(NodeConnCB):
 
 class LLMQ_IS_CL_Conflicts(CoinracTestFramework):
     def set_test_params(self):
-        self.set_raptoreum_test_params(6, 5, fast_dip3_enforcement=True)
+        self.set_coinrac_test_params(6, 5, fast_dip3_enforcement=True)
         #disable_mocktime()
 
     def run_test(self):
