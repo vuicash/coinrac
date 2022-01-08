@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2019 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Coinrac developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -96,7 +96,7 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-//Raptoreum only features
+//Coinrac only features
 bool fSmartnodeMode = false;
 bool fLiteMode = false;
 /**
@@ -266,7 +266,7 @@ const CLogCategoryDesc LogCategories[] =
     {BCLog::ALL, "1"},
     {BCLog::ALL, "all"},
 
-    //Start Raptoreum
+    //Start Coinrac
     {BCLog::CHAINLOCKS, "chainlocks"},
     {BCLog::GOBJECT, "gobject"},
     {BCLog::INSTANTSEND, "instantsend"},
@@ -278,7 +278,7 @@ const CLogCategoryDesc LogCategories[] =
     {BCLog::MNSYNC, "mnsync"},
     {BCLog::PRIVATESEND, "privatesend"},
     {BCLog::SPORK, "spork"},
-    //End Raptoreum
+    //End Coinrac
 
 };
 
@@ -618,13 +618,13 @@ void PrintExceptionContinue(const std::exception_ptr pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\RaptoreumCore
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\RaptoreumCore
-    // Mac: ~/Library/Application Support/RaptoreumCore
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\CoinracCore
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\CoinracCore
+    // Mac: ~/Library/Application Support/CoinracCore
     // Unix: ~/.raptoreumcore
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "RaptoreumCore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "CoinracCore";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -634,7 +634,7 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/RaptoreumCore";
+    return pathRet / "Library/Application Support/CoinracCore";
 #else
     // Unix
     return pathRet / ".raptoreumcore";

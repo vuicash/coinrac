@@ -91,7 +91,7 @@ public:
         vOutpoints.assign(setSelected.begin(), setSelected.end());
     }
 
-    // Raptoreum-specific helpers
+    // Coinrac-specific helpers
 
     void UsePrivateSend(bool fUsePrivateSend)
     {

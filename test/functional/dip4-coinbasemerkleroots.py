@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # Copyright (c) 2015-2020 The Dash Core developers
-# Copyright (c) 2020 The Raptoreum developers
+# Copyright (c) 2020 The Coinrac developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 from collections import namedtuple
 
 from test_framework.mininode import *
-from test_framework.test_framework import RaptoreumTestFramework
+from test_framework.test_framework import CoinracTestFramework
 from test_framework.util import p2p_port, assert_equal, sync_blocks, set_node_times
 
 '''
@@ -37,7 +37,7 @@ class TestNode(NodeConnCB):
         return self.last_mnlistdiff
 
 
-class LLMQCoinbaseCommitmentsTest(RaptoreumTestFramework):
+class LLMQCoinbaseCommitmentsTest(CoinracTestFramework):
     def set_test_params(self):
         self.set_raptoreum_test_params(6, 5, fast_dip3_enforcement=True)
 
@@ -56,7 +56,7 @@ class LLMQCoinbaseCommitmentsTest(RaptoreumTestFramework):
         mnList = self.test_getmnlistdiff(null_hash, self.nodes[0].getbestblockhash(), {}, [], expectedUpdated)
         expectedUpdated2 = expectedUpdated + []
 
-        # Register one more MN, but don't start it (that would fail as RaptoreumTestFramework doesn't support this atm)
+        # Register one more MN, but don't start it (that would fail as CoinracTestFramework doesn't support this atm)
         baseBlockHash = self.nodes[0].getbestblockhash()
         self.prepare_smartnode(self.mn_count)
         new_mn = self.mninfo[self.mn_count]

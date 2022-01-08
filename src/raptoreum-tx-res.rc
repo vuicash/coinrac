@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Raptoreum"
-            VALUE "FileDescription",    "raptoreum-tx (CLI Raptoreum transaction editor utility)"
+            VALUE "CompanyName",        "Coinrac"
+            VALUE "FileDescription",    "raptoreum-tx (CLI Coinrac transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "raptoreum-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR

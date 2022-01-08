@@ -70,11 +70,11 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your Raptoreum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Coinrac addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Esses são os seus endereços para enviar pagamentos. Sempre cheque a quantia e o endereço de recebimento antes de enviar moedas,</translation>
     </message>
     <message>
-        <source>These are your Raptoreum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Coinrac addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Estes são os seus endereços para receber pagamentos. É recomendado usar um novo para cada transação.</translation>
     </message>
     <message>
@@ -201,7 +201,7 @@
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your funds from being stolen by malware infecting your computer.</source>
-        <translation>A %1 irá fechar agora para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não fará com que seus Raptoreum estejam totalmente a salvo de serem roubados por malwares que infectem seu computador.</translation>
+        <translation>A %1 irá fechar agora para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não fará com que seus Coinrac estejam totalmente a salvo de serem roubados por malwares que infectem seu computador.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. Previous backups of the unencrypted wallet file contain the same HD seed and still have full access to all your funds just like the new, encrypted wallet.</source>
@@ -258,12 +258,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Raptoreum Core can no longer continue safely and will quit.</source>
-        <translation>Ocorreu um erro fatal. A Raptoreum não pode mais continuar de forma segura, e irá fechar</translation>
+        <source>A fatal error occurred. Coinrac Core can no longer continue safely and will quit.</source>
+        <translation>Ocorreu um erro fatal. A Coinrac não pode mais continuar de forma segura, e irá fechar</translation>
     </message>
     <message>
-        <source>Raptoreum Core</source>
-        <translation>Raptoreum Core</translation>
+        <source>Coinrac Core</source>
+        <translation>Coinrac Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -286,8 +286,8 @@
         <translation>&amp;Enviar</translation>
     </message>
     <message>
-        <source>Send coins to a Raptoreum address</source>
-        <translation>Envie moedas para um endereço Raptoreum</translation>
+        <source>Send coins to a Coinrac address</source>
+        <translation>Envie moedas para um endereço Coinrac</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -295,7 +295,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and raptoreum: URIs)</source>
-        <translation>Solicitações de pagamentos (gera códigos QR e Raptoreum: URIs)</translation>
+        <translation>Solicitações de pagamentos (gera códigos QR e Coinrac: URIs)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -322,8 +322,8 @@
         <translation>Sair da aplicação</translation>
     </message>
     <message>
-        <source>Show information about Raptoreum Core</source>
-        <translation>Exibe informações sobre Raptoreum Core</translation>
+        <source>Show information about Coinrac Core</source>
+        <translation>Exibe informações sobre Coinrac Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -394,16 +394,16 @@
         <translation>Assinar &amp;Mensagem...</translation>
     </message>
     <message>
-        <source>Sign messages with your Raptoreum addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços Raptoreum para provar que você é dono delas</translation>
+        <source>Sign messages with your Coinrac addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços Coinrac para provar que você é dono delas</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verificar mensagem...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Raptoreum addresses</source>
-        <translation>Verifique as mensagens para ter certeza de que elas foram assinadas com o endereço da Raptoreum especificado</translation>
+        <source>Verify messages to ensure they were signed with specified Coinrac addresses</source>
+        <translation>Verifique as mensagens para ter certeza de que elas foram assinadas com o endereço da Coinrac especificado</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -483,15 +483,15 @@
     </message>
     <message>
         <source>Open a raptoreum: URI or payment request</source>
-        <translation>Abrir um Raptoreum: URI ou cobrança</translation>
+        <translation>Abrir um Coinrac: URI ou cobrança</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opções de linha de &amp;comando</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Raptoreum command-line options</source>
-        <translation>Mostrar a mensagem de ajuda do %1 para obter uma lista com possíveis opções de linha de comando Raptoreum</translation>
+        <source>Show the %1 help message to get a list with possible Coinrac command-line options</source>
+        <translation>Mostrar a mensagem de ajuda do %1 para obter uma lista com possíveis opções de linha de comando Coinrac</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -526,8 +526,8 @@
         <translation>Barra de ferramentas</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Raptoreum network</source>
-        <translation><numerusform>%n conexões ativas com a rede Raptoreum</numerusform><numerusform>%n conexões ativas com a rede Raptoreum</numerusform></translation>
+        <source>%n active connection(s) to Coinrac network</source>
+        <translation><numerusform>%n conexões ativas com a rede Coinrac</numerusform><numerusform>%n conexões ativas com a rede Coinrac</numerusform></translation>
     </message>
     <message>
         <source>Network activity disabled</source>
@@ -894,7 +894,7 @@
         <translation>Editar endereço de envio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Raptoreum address.</source>
+        <source>The entered address "%1" is not a valid Coinrac address.</source>
         <translation>O endereço digitado "%1" não é um endereço válido.</translation>
     </message>
     <message>
@@ -992,7 +992,7 @@
         <translation>Informação de Envio&amp;Privado</translation>
     </message>
     <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Raptoreum in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 MAMA, 0.01 MAMA, 0.1 MAMA, 1 MAMA and 10 MAMA -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "smartnodes." These smartnodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the smartnodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The smartnode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.raptoreum.org/en/stable/wallets/raptoreumcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Coinrac in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 MAMA, 0.01 MAMA, 0.1 MAMA, 1 MAMA and 10 MAMA -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "smartnodes." These smartnodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the smartnodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The smartnode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.raptoreum.org/en/stable/wallets/raptoreumcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
         <translation>&lt;h3&gt;O básico sobre EnvioPrivado&lt;/h3&gt;O EnvioPrivado te dá verdadeira privacidade financeira ao obscurecer a origem dos seus fundos. Todos os raptoreums na sua carteira é composto de "inputs" diferentes que você pode pensar como sendo moedas separadas, discretas.&lt;br&gt;O EnvioPrivado usa um processo inovador para misturas os inputs de duas pessoas diferentes, sem que suas moedas saiam de suas carteiras. Você mantém o controle de seu dinheiro o tempo todo.. &lt;hr&gt;&lt;b&gt;O processo do EnvioPrivado funciona assim: &lt;/b&gt;&lt;li&gt;O EnvioPrivado começa quebrando os inputs de suuas transações em denominações padrão. Essas denominações são 0.001 MAMA, 0.01 MAMA, 0.1 MAMA, 1 MAMA e 10 MAMA -- algo como o dinheiro de papel que você usa todo dia.&lt;/li&gt;Sua carteira então envia uma requisição para um software especialmente configurado na rede, chamados de "smartnodes." Esses smartnodes são informados que você está interessado em misturar uma denominação específica. Nenhuma informação identificável é enviada aos smartnodes, então eles nunca sabem "quem" você é.&lt;li&gt;Quando duas pessoas enviam mensagens similares, uma sessão de mistura tem início. O smartnode mistura os inputs e instrui os três usuários da carteira para pagar o input agora transformado de volta a si mesmos. Sua carteira paga a denominação diretamente a si mesmo, mas em um endereço diferente (chamado de endereço mudado).&lt;li&gt;A fim de obscurecer plenamente seus fundos, sua carteira repete esse processo várias vezes com cada denominação. Cada vez que o processo é completado, se chama um "round". Cada round de EnvioPrivado torna exponencialmente mais difícil determinar onde os fundos se originaram.&lt;li&gt;Esse processo de mistura acontece no background sem nenhuma intervenção da sua parte. Quando você deseja fazer uma transação, seus fundos jã estarão misturados. Nenhuma espera adicional é requerida.&lt;li&gt;&lt;ol type="1"&gt;&lt;hr&gt;IMPORTANTE: &lt;b&gt;Sua carteira só contém 1000 desses "endereços mudados." Cada vez que um evento de mistura acontece, 9 de seus endereços são usados. Isso indica que esses 1000 endereços duram por cerca de 100 eventos de mistura. Quando 900 desses endereços são usados, sua carteira deve criar mais endereços. Contudo, ela só é capaz de fazer isso se você tem o backup automático habilitado.&lt;br&gt;Consequentemente, usuários que têm seus backups desabilitados também terão o EnvioPrivado desabilitado. &lt;hr&gt;Para mais informações, consulte a &lt;a href="https://docs.raptoreum.org/en/stable/wallets/raptoreumcore/privatesend-instantsend.html"&gt;documentação do PrivateSend&lt;/a&gt;.</translation>
     </message>
 </context>
@@ -1039,8 +1039,8 @@
         <translation>Aproximadamente %1 GB de dados irão ser guardados nesta pasta. </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Raptoreum block chain.</source>
-        <translation>%1 irá descarregar e armazenar uma cópia da cadeia de blocos da Raptoreum.</translation>
+        <source>%1 will download and store a copy of the Coinrac block chain.</source>
+        <translation>%1 irá descarregar e armazenar uma cópia da cadeia de blocos da Coinrac.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1185,12 +1185,12 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Raptoreum network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Coinrac network, as detailed below.</source>
         <translation>Transações recentes podem não estar visíveis ainda, portanto o seu saldo pode estar incorreto. Esta informação será corrigida assim que sua carteira for sincronizada com a rede, como detalhado abaixo.</translation>
     </message>
     <message>
-        <source>Attempting to spend Raptoreum that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>A tentativa de gastar o Raptoreum que é afetado por transações ainda não exibidas não será aceita pela rede.</translation>
+        <source>Attempting to spend Coinrac that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>A tentativa de gastar o Coinrac que é afetado por transações ainda não exibidas não será aceita pela rede.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1331,12 +1331,12 @@
         <translation>Escolher saldo de PrivateSend</translation>
     </message>
     <message>
-        <source>Automatically open the Raptoreum Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automaticamente a porta para o cliente Raptoreum Core no roteador. Essa função apenas funciona se o seu roteador oferece suporte a UPnP e a opção estiver habilitada.</translation>
+        <source>Automatically open the Coinrac Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abre automaticamente a porta para o cliente Coinrac Core no roteador. Essa função apenas funciona se o seu roteador oferece suporte a UPnP e a opção estiver habilitada.</translation>
     </message>
     <message>
-        <source>Connect to the Raptoreum network through a SOCKS5 proxy.</source>
-        <translation>Conecta à rede Raptoreum através de um proxy SOCKS5.</translation>
+        <source>Connect to the Coinrac network through a SOCKS5 proxy.</source>
+        <translation>Conecta à rede Coinrac através de um proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1439,8 +1439,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Raptoreum network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conecte-se à rede Raptoreum através de um proxy SOCKS5 separado para serviços ocultos Tor</translation>
+        <source>Connect to the Coinrac network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Conecte-se à rede Coinrac através de um proxy SOCKS5 separado para serviços ocultos Tor</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1564,8 +1564,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Formulário</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Raptoreum network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação exibida pode estar desatualizada. Sua wallet é sincronizada automaticamente com a rede Raptoreum tão logo uma conexão se estabeleça, entrtanto esse processo ainda não está completo.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Coinrac network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação exibida pode estar desatualizada. Sua wallet é sincronizada automaticamente com a rede Coinrac tão logo uma conexão se estabeleça, entrtanto esse processo ainda não está completo.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1802,7 +1802,7 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
     </message>
     <message>
         <source>Cannot start raptoreum: click-to-pay handler</source>
-        <translation>Não foi possível iniciar Raptoreum: manipulador click-to-pay</translation>
+        <translation>Não foi possível iniciar Coinrac: manipulador click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1817,7 +1817,7 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Endereço de pagamento inválido %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Raptoreum address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Coinrac address or malformed URI parameters.</source>
         <translation>A URI não pode ser analisada! Isto pode ser causado por um endereço inválido ou um parâmetro URI malformado.</translation>
     </message>
     <message>
@@ -1915,8 +1915,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Quantia</translation>
     </message>
     <message>
-        <source>Enter a Raptoreum address (e.g. %1)</source>
-        <translation>Informe um endereço Raptoreum (ex: %1)</translation>
+        <source>Enter a Coinrac address (e.g. %1)</source>
+        <translation>Informe um endereço Coinrac (ex: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2441,8 +2441,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>R&amp;eutilize um endereço de recebimento (não recomendado)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Raptoreum network.</source>
-        <translation>Uma mensagem opcional que será anexada na cobrança e será mostrada quando ela for aberta. Nota: A mensagem não será enviada com o pagamento pela rede Raptoreum.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Coinrac network.</source>
+        <translation>Uma mensagem opcional que será anexada na cobrança e será mostrada quando ela for aberta. Nota: A mensagem não será enviada com o pagamento pela rede Coinrac.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2453,8 +2453,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Um marcador opcional para associar ao novo endereço de recebimento.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Raptoreum network.</source>
-        <translation>Uma mensagem opcional para anexar à solicitação de pagamento, que será exibida quando a solicitação for aberta. &lt;br&gt;Observação: a mensagem não será enviada com o pagamento pela rede do Raptoreum.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Coinrac network.</source>
+        <translation>Uma mensagem opcional para anexar à solicitação de pagamento, que será exibida quando a solicitação for aberta. &lt;br&gt;Observação: a mensagem não será enviada com o pagamento pela rede do Coinrac.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2886,8 +2886,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation><numerusform>Estimativa para iniciar a confirmação em %n blocos.</numerusform><numerusform>Estimativa para iniciar a confirmação em %n blocos.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Raptoreum address</source>
-        <translation>Aviso: Endereço Raptoreum inválido</translation>
+        <source>Warning: Invalid Coinrac address</source>
+        <translation>Aviso: Endereço Coinrac inválido</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2917,8 +2917,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The Raptoreum address to send the payment to</source>
-        <translation>O endereço Raptoreum para enviar o pagamento a</translation>
+        <source>The Coinrac address to send the payment to</source>
+        <translation>O endereço Coinrac para enviar o pagamento a</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2953,8 +2953,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Q&amp;uantidade:</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of Raptoreum than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>A taxa será deduzida do valor enviado. O destinatário receberá uma quantidade menor de Raptoreum do que você insere no campo de valor. Se vários destinatários forem selecionados, a taxa será dividida igualmente.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of Coinrac than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>A taxa será deduzida do valor enviado. O destinatário receberá uma quantidade menor de Coinrac do que você insere no campo de valor. Se vários destinatários forem selecionados, a taxa será dividida igualmente.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2965,8 +2965,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Mensagem:</translation>
     </message>
     <message>
-        <source>A message that was attached to the raptoreum: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Raptoreum network.</source>
-        <translation>A mensagem que foi anexada ao Raptoreum: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Raptoreum.</translation>
+        <source>A message that was attached to the raptoreum: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Coinrac network.</source>
+        <translation>A mensagem que foi anexada ao Coinrac: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Coinrac.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3018,12 +3018,12 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>&amp;Assinar Mensagem</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive Raptoreum sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Você pode assinar mensagens/acordos com seus endereços para provar que pode receber o Raptoreum enviado para eles. Tenha cuidado para não assinar nada vago ou aleatório, pois os ataques de phishing podem tentar convencê-lo a assinar sua identidade para eles. Assine apenas declarações totalmente detalhadas com as quais você concorda.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive Coinrac sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Você pode assinar mensagens/acordos com seus endereços para provar que pode receber o Coinrac enviado para eles. Tenha cuidado para não assinar nada vago ou aleatório, pois os ataques de phishing podem tentar convencê-lo a assinar sua identidade para eles. Assine apenas declarações totalmente detalhadas com as quais você concorda.</translation>
     </message>
     <message>
-        <source>The Raptoreum address to sign the message with</source>
-        <translation>O endereço Raptoreum que assinará a mensagem</translation>
+        <source>The Coinrac address to sign the message with</source>
+        <translation>O endereço Coinrac que assinará a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3054,8 +3054,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Copiar a assinatura para a área de transferência do sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Raptoreum address</source>
-        <translation>Assinar mensagem para provar que você é dono deste endereço Raptoreum</translation>
+        <source>Sign the message to prove you own this Coinrac address</source>
+        <translation>Assinar mensagem para provar que você é dono deste endereço Coinrac</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3078,12 +3078,12 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Coloque o endereço do autor, a mensagem (certifique-se de copiar toda a mensagem, incluindo quebras de linha, espaços, tabulações, etc.) e a assinatura embaixo para verificar a mensagem. Cuidado para não ler mais da assinatura do que está assinado na mensagem, para evitar ser enganado pelo ataque man-in-the-middle. Note que isso somente prova a propriedade de um endereço, e não o remetende de qualquer transação.</translation>
     </message>
     <message>
-        <source>The Raptoreum address the message was signed with</source>
-        <translation>O endereço Raptoreum que foi usado para assinar a mensagem</translation>
+        <source>The Coinrac address the message was signed with</source>
+        <translation>O endereço Coinrac que foi usado para assinar a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Raptoreum address</source>
-        <translation>Verifique a mensagem para se assegurar de que foi assinada pelo endereço Raptoreum específicado</translation>
+        <source>Verify the message to ensure it was signed with the specified Coinrac address</source>
+        <translation>Verifique a mensagem para se assegurar de que foi assinada pelo endereço Coinrac específicado</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -4315,8 +4315,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Chave KeePassHttp para usar na comunicação cifrada AES com o KeePass</translation>
     </message>
     <message>
-        <source>Disable all Raptoreum specific functionality (Smartnodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionalidades específicas da Raptoreum (Smartnodes, EnvioPrivado, EnvioInstantâneo, Governança) (0-1, default: %u)</translation>
+        <source>Disable all Coinrac specific functionality (Smartnodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionalidades específicas da Coinrac (Smartnodes, EnvioPrivado, EnvioInstantâneo, Governança) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>%s file contains all private keys from this wallet. Do not share it with anyone!</source>
@@ -4823,8 +4823,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Opções do servidor RPC:</translation>
     </message>
     <message>
-        <source>Raptoreum Core</source>
-        <translation>Raptoreum Core</translation>
+        <source>Coinrac Core</source>
+        <translation>Coinrac Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -4951,8 +4951,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Inclui na lista branca pares conectando do dado endereço IP (ex: 1.2.3.4) ou rede em notação CIDR (ex: 1.2.3.0/24). Pode ser especificado várias vezes.</translation>
     </message>
     <message>
-        <source>You are starting in lite mode, most Raptoreum-specific functionality is disabled.</source>
-        <translation>Você está iniciando no modo Lite, a maioria das funcionalidades específicas do Raptoreum está desabilitada.</translation>
+        <source>You are starting in lite mode, most Coinrac-specific functionality is disabled.</source>
+        <translation>Você está iniciando no modo Lite, a maioria das funcionalidades específicas do Coinrac está desabilitada.</translation>
     </message>
     <message>
         <source>%d of last 100 blocks have unexpected version</source>

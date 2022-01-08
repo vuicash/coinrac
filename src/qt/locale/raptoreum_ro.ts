@@ -70,12 +70,12 @@
         <translation>Adresa de primire</translation>
     </message>
     <message>
-        <source>These are your Raptoreum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Acestea sunt adresele tale Raptoreum pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
+        <source>These are your Coinrac addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Acestea sunt adresele tale Coinrac pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
     </message>
     <message>
-        <source>These are your Raptoreum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Acestea sunt adresele tale Raptoreum pentru receptionarea platilor. Este recomandat sa folosesti mereu o adresa noua pentru primirea platilor.</translation>
+        <source>These are your Coinrac addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Acestea sunt adresele tale Coinrac pentru receptionarea platilor. Este recomandat sa folosesti mereu o adresa noua pentru primirea platilor.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -258,12 +258,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Raptoreum Core can no longer continue safely and will quit.</source>
-        <translation>A apărut o eroare fatală. Raptoreum Core nu mai poate continua în siguranță și se va opri.</translation>
+        <source>A fatal error occurred. Coinrac Core can no longer continue safely and will quit.</source>
+        <translation>A apărut o eroare fatală. Coinrac Core nu mai poate continua în siguranță și se va opri.</translation>
     </message>
     <message>
-        <source>Raptoreum Core</source>
-        <translation>Raptoreum Core</translation>
+        <source>Coinrac Core</source>
+        <translation>Coinrac Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -286,8 +286,8 @@
         <translation>Trimite</translation>
     </message>
     <message>
-        <source>Send coins to a Raptoreum address</source>
-        <translation>Trimite monede către o adresă Raptoreum</translation>
+        <source>Send coins to a Coinrac address</source>
+        <translation>Trimite monede către o adresă Coinrac</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -295,7 +295,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and raptoreum: URIs)</source>
-        <translation>Cereţi plăţi (generează coduri QR şi Raptoreum-uri: URls)</translation>
+        <translation>Cereţi plăţi (generează coduri QR şi Coinrac-uri: URls)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -322,8 +322,8 @@
         <translation>Închide aplicaţia</translation>
     </message>
     <message>
-        <source>Show information about Raptoreum Core</source>
-        <translation>Arată informații despre Raptoreum Core</translation>
+        <source>Show information about Coinrac Core</source>
+        <translation>Arată informații despre Coinrac Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -394,16 +394,16 @@
         <translation>Semnează &amp;mesaj...</translation>
     </message>
     <message>
-        <source>Sign messages with your Raptoreum addresses to prove you own them</source>
-        <translation>Semnaţi mesaje cu adresa dvs. Raptoreum pentru a dovedi că vă aparţin</translation>
+        <source>Sign messages with your Coinrac addresses to prove you own them</source>
+        <translation>Semnaţi mesaje cu adresa dvs. Coinrac pentru a dovedi că vă aparţin</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verifică mesaj...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Raptoreum addresses</source>
-        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa Raptoreum specificată</translation>
+        <source>Verify messages to ensure they were signed with specified Coinrac addresses</source>
+        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa Coinrac specificată</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -483,15 +483,15 @@
     </message>
     <message>
         <source>Open a raptoreum: URI or payment request</source>
-        <translation>Deschidere Raptoreum: o adresa URI sau o cerere de plată</translation>
+        <translation>Deschidere Coinrac: o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opţiuni linie de &amp;comandă</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Raptoreum command-line options</source>
-        <translation>Arată mesajul de ajutor %1 pentru a obţine o listă cu opţiunile posibile de linii de comandă Raptoreum</translation>
+        <source>Show the %1 help message to get a list with possible Coinrac command-line options</source>
+        <translation>Arată mesajul de ajutor %1 pentru a obţine o listă cu opţiunile posibile de linii de comandă Coinrac</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -526,8 +526,8 @@
         <translation>Bara de file</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Raptoreum network</source>
-        <translation><numerusform>%n conexiune activă la rețeaua Raptoreum</numerusform><numerusform>%n conexiuni active la rețeaua Raptoreum</numerusform><numerusform>%n conexiuni active la rețeaua Raptoreum </numerusform></translation>
+        <source>%n active connection(s) to Coinrac network</source>
+        <translation><numerusform>%n conexiune activă la rețeaua Coinrac</numerusform><numerusform>%n conexiuni active la rețeaua Coinrac</numerusform><numerusform>%n conexiuni active la rețeaua Coinrac </numerusform></translation>
     </message>
     <message>
         <source>Network activity disabled</source>
@@ -866,8 +866,8 @@
         <translation>Editează adresa de trimitere</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Raptoreum address.</source>
-        <translation>Adresa introdusă "%1" nu este o adresă Raptoreum validă</translation>
+        <source>The entered address "%1" is not a valid Coinrac address.</source>
+        <translation>Adresa introdusă "%1" nu este o adresă Coinrac validă</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1007,8 +1007,8 @@
         <translation>Aproximativ %1 GB de date vor fi stocate in acest director.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Raptoreum block chain.</source>
-        <translation>%1 va descarca si stoca o copie a blockchainului Raptoreum</translation>
+        <source>%1 will download and store a copy of the Coinrac block chain.</source>
+        <translation>%1 va descarca si stoca o copie a blockchainului Coinrac</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1133,12 +1133,12 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Raptoreum network, as detailed below.</source>
-        <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua Raptoreum, asa cum este detaliat mai jos.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Coinrac network, as detailed below.</source>
+        <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua Coinrac, asa cum este detaliat mai jos.</translation>
     </message>
     <message>
-        <source>Attempting to spend Raptoreum that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Încercarea de a cheltui monede Raptoreum care sunt afectate de tranzacțiile care nu au fost încă afișate nu va fi acceptată de rețea.</translation>
+        <source>Attempting to spend Coinrac that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Încercarea de a cheltui monede Coinrac care sunt afectate de tranzacțiile care nu au fost încă afișate nu va fi acceptată de rețea.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1275,12 +1275,12 @@
         <translation>Această sumă acționează ca un prag pentru a dezactiva TrimitePrivat după ce a fost atins.</translation>
     </message>
     <message>
-        <source>Automatically open the Raptoreum Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat portul client Raptoreum Core de pe router. Asta funcționează numai atunci când routerul dvs. acceptă UPnP și este activat.</translation>
+        <source>Automatically open the Coinrac Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat portul client Coinrac Core de pe router. Asta funcționează numai atunci când routerul dvs. acceptă UPnP și este activat.</translation>
     </message>
     <message>
-        <source>Connect to the Raptoreum network through a SOCKS5 proxy.</source>
-        <translation>Conectare la reţeaua Raptoreum printr-un proxy SOCKS.</translation>
+        <source>Connect to the Coinrac network through a SOCKS5 proxy.</source>
+        <translation>Conectare la reţeaua Coinrac printr-un proxy SOCKS.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1379,8 +1379,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Raptoreum network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conectare la reteaua Raptoreum printr-un proxy SOCKS5 separat pentru serviciile TOR ascunse.</translation>
+        <source>Connect to the Coinrac network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Conectare la reteaua Coinrac printr-un proxy SOCKS5 separat pentru serviciile TOR ascunse.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1504,8 +1504,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Raptoreum network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua Raptoreum după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Coinrac network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua Coinrac după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1738,7 +1738,7 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
     </message>
     <message>
         <source>Cannot start raptoreum: click-to-pay handler</source>
-        <translation>Raptoreum nu poate porni: click-to-pay handler</translation>
+        <translation>Coinrac nu poate porni: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1753,8 +1753,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Adresă pentru plată invalidă %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Raptoreum address or malformed URI parameters.</source>
-        <translation>URI nu poate fi analizat! Acest lucru poate fi cauzat de o adresă Raptoreum invalidă sau parametri URI deformaţi.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Coinrac address or malformed URI parameters.</source>
+        <translation>URI nu poate fi analizat! Acest lucru poate fi cauzat de o adresă Coinrac invalidă sau parametri URI deformaţi.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1851,8 +1851,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Cantitate</translation>
     </message>
     <message>
-        <source>Enter a Raptoreum address (e.g. %1)</source>
-        <translation>Introduceţi o adresă Raptoreum (de exemplu %1)</translation>
+        <source>Enter a Coinrac address (e.g. %1)</source>
+        <translation>Introduceţi o adresă Coinrac (de exemplu %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2377,8 +2377,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>R&amp;eutilizează o adresă de primire existentă (nerecomandat)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Raptoreum network.</source>
-        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Raptoreum.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Coinrac network.</source>
+        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Coinrac.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2389,8 +2389,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>O etichetă opţională de asociat cu adresa de primire.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Raptoreum network.</source>
-        <translation>Un mesaj opțional pentru a atașa solicitării de plată, care va fi afișat la deschiderea cererii.&lt;br&gt;Notă: mesajul nu va fi trimis cu plata prin rețeaua Raptoreum.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Coinrac network.</source>
+        <translation>Un mesaj opțional pentru a atașa solicitării de plată, care va fi afișat la deschiderea cererii.&lt;br&gt;Notă: mesajul nu va fi trimis cu plata prin rețeaua Coinrac.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2798,8 +2798,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation><numerusform>Înceaperea confirmării estimată într-un %n block.</numerusform><numerusform>Înceaperea confirmării estimată în %n block-uri.</numerusform><numerusform>Înceaperea confirmării estimată în %n block-uri.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Raptoreum address</source>
-        <translation>Atenţie: Adresa Raptoreum nevalidă!</translation>
+        <source>Warning: Invalid Coinrac address</source>
+        <translation>Atenţie: Adresa Coinrac nevalidă!</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2829,8 +2829,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Plăteşte că&amp;tre:</translation>
     </message>
     <message>
-        <source>The Raptoreum address to send the payment to</source>
-        <translation>Adresa Raptoreum către care se face plata</translation>
+        <source>The Coinrac address to send the payment to</source>
+        <translation>Adresa Coinrac către care se face plata</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2865,8 +2865,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Su&amp;mă:</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of Raptoreum than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Taxa va fi dedusă din suma trimisă. Destinatarul va primi o sumă mai mică de Raptoreum decât introduci în câmpul pentru suma. Dacă sunt selectați mai mulți destinatari, taxa este împărțită în mod egal.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of Coinrac than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Taxa va fi dedusă din suma trimisă. Destinatarul va primi o sumă mai mică de Coinrac decât introduci în câmpul pentru suma. Dacă sunt selectați mai mulți destinatari, taxa este împărțită în mod egal.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2877,8 +2877,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Mesaj:</translation>
     </message>
     <message>
-        <source>A message that was attached to the raptoreum: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Raptoreum network.</source>
-        <translation>un mesaj a fost ataşat la Raptoreum: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua Raptoreum.</translation>
+        <source>A message that was attached to the raptoreum: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Coinrac network.</source>
+        <translation>un mesaj a fost ataşat la Coinrac: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua Coinrac.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -2930,11 +2930,11 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>&amp;Semnează mesaj</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive Raptoreum sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Poți semna mesaje / acorduri cu adreseletale pentru a dovedi că poți primi Raptoreum trimis la ele. Ai grijă să nu semnezi nimic vag sau întâmplător, deoarece atacurile de tip phishing pot încerca să te păcălească să le dai identitatea ta. Semnează declarații complet-detaliate cu care ești de acord.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive Coinrac sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Poți semna mesaje / acorduri cu adreseletale pentru a dovedi că poți primi Coinrac trimis la ele. Ai grijă să nu semnezi nimic vag sau întâmplător, deoarece atacurile de tip phishing pot încerca să te păcălească să le dai identitatea ta. Semnează declarații complet-detaliate cu care ești de acord.</translation>
     </message>
     <message>
-        <source>The Raptoreum address to sign the message with</source>
+        <source>The Coinrac address to sign the message with</source>
         <translation>Adresa cu care semnaţi mesajul</translation>
     </message>
     <message>
@@ -2966,8 +2966,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Copiaza semnatura curenta in clipboard-ul sistemului</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Raptoreum address</source>
-        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Raptoreum</translation>
+        <source>Sign the message to prove you own this Coinrac address</source>
+        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Coinrac</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2990,12 +2990,12 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Introduceţi adresa de semnatură, mesajul (asiguraţi-vă că aţi copiat spaţiile, taburile etc. exact) şi semnatura dedesubt pentru a verifica mesajul. Aveţi grijă să nu citiţi mai mult în semnatură decît mesajul în sine, pentru a evita să fiţi păcăliţi de un atac de tip man-in-the-middle. De notat ca aceasta dovedeste doar ca semnatarul primeste odata cu adresa, nu dovedesta insa trimiterea vreunei tranzactii.</translation>
     </message>
     <message>
-        <source>The Raptoreum address the message was signed with</source>
-        <translation>Introduceţi o adresă Raptoreum</translation>
+        <source>The Coinrac address the message was signed with</source>
+        <translation>Introduceţi o adresă Coinrac</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Raptoreum address</source>
-        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa Raptoreum specificată</translation>
+        <source>Verify the message to ensure it was signed with the specified Coinrac address</source>
+        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa Coinrac specificată</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -4211,8 +4211,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Cheie KeePassHttp pentru comunicarea criptată AES cu KeePass</translation>
     </message>
     <message>
-        <source>Disable all Raptoreum specific functionality (Smartnodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
-        <translation>Dezactivează toate funcționalitățile specifice Raptoreum (Smartnode-uri, TrimitePrivat, TrimiteInstant, Guvernanță) (0-1, implicit: %u)</translation>
+        <source>Disable all Coinrac specific functionality (Smartnodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
+        <translation>Dezactivează toate funcționalitățile specifice Coinrac (Smartnode-uri, TrimitePrivat, TrimiteInstant, Guvernanță) (0-1, implicit: %u)</translation>
     </message>
     <message>
         <source>%s file contains all private keys from this wallet. Do not share it with anyone!</source>
@@ -4695,8 +4695,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Opțiuni server RPC:</translation>
     </message>
     <message>
-        <source>Raptoreum Core</source>
-        <translation>Raptoreum Core</translation>
+        <source>Coinrac Core</source>
+        <translation>Coinrac Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -4823,8 +4823,8 @@ https://www.transifex.com/projects/p/raptoreum/</translation>
         <translation>Whitelist peers care se conectează de la adresa IP dată (ex. 1.2.3.4) sau rețeaua notată CIDR (ex. 1.2.3.0/24). Poate fi specificat de mai multe ori.</translation>
     </message>
     <message>
-        <source>You are starting in lite mode, most Raptoreum-specific functionality is disabled.</source>
-        <translation>Începeți în modul lite, cele mai multe funcționalități specifice Raptoreum sunt dezactivate.</translation>
+        <source>You are starting in lite mode, most Coinrac-specific functionality is disabled.</source>
+        <translation>Începeți în modul lite, cele mai multe funcționalități specifice Coinrac sunt dezactivate.</translation>
     </message>
     <message>
         <source>%d of last 100 blocks have unexpected version</source>

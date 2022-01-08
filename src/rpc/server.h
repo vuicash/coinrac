@@ -137,7 +137,7 @@ public:
 };
 
 /**
- * Raptoreum RPC command dispatcher.
+ * Coinrac RPC command dispatcher.
  */
 class CRPCTable
 {

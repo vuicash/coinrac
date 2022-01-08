@@ -29,7 +29,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Raptoreum Qt UI.
+/** Utility functions used by the Coinrac Qt UI.
  */
 namespace GUIUtil
 {

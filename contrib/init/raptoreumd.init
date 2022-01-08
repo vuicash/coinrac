@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#  raptoreumd The Raptoreum Core server.
+#  raptoreumd The Coinrac Core server.
 #
 #
 # chkconfig: 345 80 20

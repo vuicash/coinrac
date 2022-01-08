@@ -34,10 +34,10 @@ Package: raptoreumd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Raptoreum is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Raptoreum uses peer-to-peer
+ Coinrac is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Coinrac uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Raptoreum Core
+ and issuing money are carried out collectively by the network. Coinrac Core
  is the name of the open source software which enables the use of this currency.
  .
  This package provides the daemon, raptoreumd, and the CLI tool
@@ -47,22 +47,22 @@ Package: raptoreum-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Raptoreum is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Raptoreum uses peer-to-peer
+ Coinrac is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Coinrac uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Raptoreum Core
+ and issuing money are carried out collectively by the network. Coinrac Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides Raptoreum-Qt, a GUI for Raptoreum based on Qt.
+ This package provides Coinrac-Qt, a GUI for Coinrac based on Qt.
 
 Package: raptoreum-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- Raptoreum is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Raptoreum uses peer-to-peer
+ Coinrac is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Coinrac uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Raptoreum Core
+ and issuing money are carried out collectively by the network. Coinrac Core
  is the name of the open source software which enables the use of this currency.
  .
  This package provides raptoreum-tx, a command-line transaction creation

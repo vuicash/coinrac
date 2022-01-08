@@ -9,7 +9,7 @@
 #define UNUSED
 #endif
 static const char UNUSED *raptoreum_strings[] = {
-QT_TRANSLATE_NOOP("raptoreum-core", "Raptoreum Core"),
+QT_TRANSLATE_NOOP("raptoreum-core", "Coinrac Core"),
 QT_TRANSLATE_NOOP("raptoreum-core", "The %s developers"),
 QT_TRANSLATE_NOOP("raptoreum-core", ""
 "%s file contains all private keys from this wallet. Do not share it with "
@@ -60,7 +60,7 @@ QT_TRANSLATE_NOOP("raptoreum-core", ""
 "Delete all wallet transactions and only recover those parts of the "
 "blockchain through -rescan on startup"),
 QT_TRANSLATE_NOOP("raptoreum-core", ""
-"Disable all Raptoreum specific functionality (Smartnodes, PrivateSend, "
+"Disable all Coinrac specific functionality (Smartnodes, PrivateSend, "
 "InstantSend, Governance) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("raptoreum-core", ""
 "Discover own IP addresses (default: 1 when listening and no -externalip or -"
@@ -336,7 +336,7 @@ QT_TRANSLATE_NOOP("raptoreum-core", ""
 "Whitelisted peers cannot be DoS banned and their transactions are always "
 "relayed, even if they are already in the mempool, useful e.g. for a gateway"),
 QT_TRANSLATE_NOOP("raptoreum-core", ""
-"You are starting in lite mode, most Raptoreum-specific functionality is disabled."),
+"You are starting in lite mode, most Coinrac-specific functionality is disabled."),
 QT_TRANSLATE_NOOP("raptoreum-core", ""
 "You need to rebuild the database using -reindex to change -timestampindex"),
 QT_TRANSLATE_NOOP("raptoreum-core", ""

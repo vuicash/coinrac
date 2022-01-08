@@ -68,9 +68,9 @@ can then be controlled by group membership.
 3b) Mac OS X
 
 Binary:              `/usr/local/bin/raptoreumd`  
-Configuration file:  `~/Library/Application Support/RaptoreumCore/raptoreum.conf`  
-Data directory:      `~/Library/Application Support/RaptoreumCore`
-Lock file:           `~/Library/Application Support/RaptoreumCore/.lock`
+Configuration file:  `~/Library/Application Support/CoinracCore/raptoreum.conf`  
+Data directory:      `~/Library/Application Support/CoinracCore`
+Lock file:           `~/Library/Application Support/CoinracCore/.lock`
 
 4. Installing Service Configuration
 -----------------------------------

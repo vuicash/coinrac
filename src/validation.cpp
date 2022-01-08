@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Coinrac developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -63,7 +63,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Raptoreum Core cannot be compiled without assertions."
+# error "Coinrac Core cannot be compiled without assertions."
 #endif
 
 /**
@@ -596,7 +596,7 @@ static bool AcceptToMemoryPoolWorker(const CChainParams& chainparams, CTxMemPool
         {
             const CTransaction *ptxConflicting = itConflicting->second;
 
-            // Transaction conflicts with mempool and RBF doesn't exist in Raptoreum
+            // Transaction conflicts with mempool and RBF doesn't exist in Coinrac
             return state.Invalid(false, REJECT_DUPLICATE, "txn-mempool-conflict");
         }
     }
@@ -1784,7 +1784,7 @@ static int64_t nTimeSubsidy = 0;
 static int64_t nTimeValueValid = 0;
 static int64_t nTimePayeeValid = 0;
 static int64_t nTimeProcessSpecial = 0;
-static int64_t nTimeRaptoreumSpecific = 0;
+static int64_t nTimeCoinracSpecific = 0;
 static int64_t nTimeConnect = 0;
 static int64_t nTimeIndex = 0;
 static int64_t nTimeCallbacks = 0;
@@ -2119,8 +2119,8 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
     int64_t nTime5_5 = GetTimeMicros(); nTimeProcessSpecial += nTime5_5 - nTime5_4;
     LogPrint(BCLog::BENCHMARK, "      - ProcessSpecialTxsInBlock: %.2fms [%.2fs]\n", 0.001 * (nTime5_5 - nTime5_4), nTimeProcessSpecial * 0.000001);
 
-    int64_t nTime5 = GetTimeMicros(); nTimeRaptoreumSpecific += nTime5 - nTime4;
-    LogPrint(BCLog::BENCHMARK, "    - Raptoreum specific: %.2fms [%.2fs]\n", 0.001 * (nTime5 - nTime4), nTimeRaptoreumSpecific * 0.000001);
+    int64_t nTime5 = GetTimeMicros(); nTimeCoinracSpecific += nTime5 - nTime4;
+    LogPrint(BCLog::BENCHMARK, "    - Coinrac specific: %.2fms [%.2fs]\n", 0.001 * (nTime5 - nTime4), nTimeCoinracSpecific * 0.000001);
 
     // END COINRAC
 

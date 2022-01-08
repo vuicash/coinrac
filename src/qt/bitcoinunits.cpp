@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2019 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Coinrac developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -73,10 +73,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case MAMA: return QString("Raptoreum");
-            case mMAMA: return QString("Milli-Raptoreum (1 / 1" THIN_SP_UTF8 "000)");
-            case uMAMA: return QString("Micro-Raptoreum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case ruffs: return QString("Ten Nano-Raptoreum (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case MAMA: return QString("Coinrac");
+            case mMAMA: return QString("Milli-Coinrac (1 / 1" THIN_SP_UTF8 "000)");
+            case uMAMA: return QString("Micro-Coinrac (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case ruffs: return QString("Ten Nano-Coinrac (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -84,10 +84,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case MAMA: return QString("TestRaptoreums");
-            case mMAMA: return QString("Milli-TestRaptoreum (1 / 1" THIN_SP_UTF8 "000)");
-            case uMAMA: return QString("Micro-TestRaptoreum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case ruffs: return QString("Ten Nano-TestRaptoreum (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case MAMA: return QString("TestCoinracs");
+            case mMAMA: return QString("Milli-TestCoinrac (1 / 1" THIN_SP_UTF8 "000)");
+            case uMAMA: return QString("Micro-TestCoinrac (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case ruffs: return QString("Ten Nano-TestCoinrac (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }

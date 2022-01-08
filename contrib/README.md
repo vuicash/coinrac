@@ -12,7 +12,7 @@ Tool to verify that every merge commit was signed by a developer using the above
 Construct a linear, no-fork, best version of the blockchain.
 
 ### [Qos](/contrib/qos) ###
-A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Raptoreum network. This means one can have an always-on raptoreumd instance running, and another local raptoreumd/raptoreum-qt instance which connects to this node and receives blocks from it.
+A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Coinrac network. This means one can have an always-on raptoreumd instance running, and another local raptoreumd/raptoreum-qt instance which connects to this node and receives blocks from it.
 
 ### [Seeds](/contrib/seeds) ###
 Utility to generate the pnSeed[] array that is compiled into the client.
@@ -28,7 +28,7 @@ for Debian-based Linux systems. If you compile raptoreumd/raptoreum-qt yourself,
 Notes on getting Gitian builds up and running using KVM.
 
 ### [Gitian-keys](/contrib/gitian-keys)
-PGP keys used for signing Raptoreum Core [Gitian release](/doc/release-process.md) results.
+PGP keys used for signing Coinrac Core [Gitian release](/doc/release-process.md) results.
 
 ### [MacDeploy](/contrib/macdeploy) ###
 Scripts and notes for Mac builds. 
@@ -40,7 +40,7 @@ Test and Verify Tools
 ---------------------
 
 ### [TestGen](/contrib/testgen) ###
-Utilities to generate test vectors for the data-driven Raptoreum tests.
+Utilities to generate test vectors for the data-driven Coinrac tests.
 
 ### [Verify Binaries](/contrib/verifybinaries) ###
 This script attempts to download and verify the signature file SHA256SUMS.asc from bitcoin.org.

@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Coinrac developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1085,7 +1085,7 @@ UniValue getsuperblockbudget(const JSONRPCRequest& request)
 static const CRPCCommand commands[] =
 { //  category              name                      actor (function)         okSafe argNames
   //  --------------------- ------------------------  -----------------------  ------ ----------
-    /* Raptoreum features */
+    /* Coinrac features */
     { "raptoreum",               "getgovernanceinfo",      &getgovernanceinfo,      true,  {} },
     { "raptoreum",               "getsuperblockbudget",    &getsuperblockbudget,    true,  {"index"} },
     { "raptoreum",               "gobject",                &gobject,                true,  {} },

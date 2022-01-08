@@ -83,7 +83,7 @@ libconftest.dylib*
 *.qm
 Makefile
 raptoreum-qt
-Raptoreum-Qt.app
+Coinrac-Qt.app
 !/depends/Makefile
 
 # Unit-tests

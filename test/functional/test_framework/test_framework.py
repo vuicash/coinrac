@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Copyright (c) 2014-2016 The Bitcoin Core developers
 # Copyright (c) 2014-2020 The Dash Core developers
-# Copyright (c) 2020 The Raptoreum developers
+# Copyright (c) 2020 The Coinrac developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Base class for RPC testing."""
@@ -482,7 +482,7 @@ class SmartnodeInfo:
         self.collateral_vout = collateral_vout
 
 
-class RaptoreumTestFramework(BitcoinTestFramework):
+class CoinracTestFramework(BitcoinTestFramework):
     def set_raptoreum_test_params(self, num_nodes, masterodes_count, extra_args=None, fast_dip3_enforcement=False):
         self.mn_count = masterodes_count
         self.num_nodes = num_nodes

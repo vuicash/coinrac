@@ -11,7 +11,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between raptoreum-cli and raptoreumd)
- * of a given instance of the Raptoreum system.
+ * of a given instance of the Coinrac system.
  */
 class CBaseChainParams
 {
