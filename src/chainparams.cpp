@@ -459,10 +459,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x74;//t
-        pchMessageStart[1] = 0x72;//r
-        pchMessageStart[2] = 0x6d;//m
-        pchMessageStart[3] = 0x2e;//.
+        pchMessageStart[0] = 0x64;//co the thay doi
+        pchMessageStart[1] = 0x72;//co the thay doi
+        pchMessageStart[2] = 0x8d;//co the thay doi
+        pchMessageStart[3] = 0x9e;//.
         nDefaultPort = 16789;
         nPruneAfterHeight = 100000;
         //FindMainNetGenesisBlock(1614369600, 1d6f6960, "main");
@@ -482,16 +482,16 @@ public:
        // vSeeds.emplace_back("ny1.mamatoreum.com", true);
 
 
-        // Mamatoreum addresses start with 'r'
+        // Mamatoreum addresses start with 'r' //Khong nen thay doi tham so nay se bao loi
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,60);
         // Mamatoreum script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,16);
         // Mamatoreum private keys start with '7' or 'X'
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,128);
-        // Mamatoreum BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
-        base58Prefixes[EXT_PUBLIC_KEY] = {0x05, 0x88, 0xB2, 0x1E};
-        // Mamatoreum BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
-        base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
+        // Mamatoreum BIP32 pubkeys start with 'xpub' (Bitcoin defaults) //co the thay doi
+        base58Prefixes[EXT_PUBLIC_KEY] = {0x05, 0x68, 0xB3, 0x2E};
+        // Mamatoreum BIP32 prvkeys start with 'xprv' (Bitcoin defaults) //co the thay doi
+        base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x78, 0xAC, 0xE6};
         // Mamatoreum BIP44 coin type is '5'
         nExtCoinType = gArgs.GetArg("-extcoinindex", 200);
         nExtCoinType = nExtCoinType == 0 ? 200 : nExtCoinType;
@@ -529,8 +529,8 @@ public:
         nPoolMaxParticipants = 5;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
 
-        //vSporkAddresses = {"REj6zg8PtiUj2GgjVH4zQisa3AnBwSMmZz"};
-	vSporkAddresses = {"RFkP8R96AvQdgwCRXGw9gUiJFxQqSEp5iN"};
+        //Coin RAC cua nha sang lap
+	vSporkAddresses = {"RWgZzTdFq2PFiF4iL1ZvQR4Q88MZZYmZbx"};
 
         nMinSporkKeys = 1;
         fBIP9CheckSmartnodesUpgraded = true;
