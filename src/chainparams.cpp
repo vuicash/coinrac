@@ -79,11 +79,10 @@ static CBlock CreateDevNetGenesisBlock(const uint256 &prevBlockHash, const std::
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "MAMA TOREUM";
-    const CScript genesisOutputScript = CScript() << ParseHex("040fa452217deb64caf7e107ae60db62e716b2d71a13c2f929e474352fbc174354622dbecbbe0d997347f0e50549327faf8f6feec6d8eaefbdf75b543f2a056ffd") << OP_CHECKSIG;
+    const char* pszTimestamp = "The Times 22/Jan/2018 Raptoreum is name of the game for new generation of firms";
+    const CScript genesisOutputScript = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
-
 
 void CChainParams::UpdateVersionBitsParameters(Consensus::DeploymentPos d, int64_t nStartTime, int64_t nTimeout, int64_t nWindowSize, int64_t nThreshold)
 {
@@ -448,29 +447,29 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // The best chain should have at least this much work.
-        //consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000c2a6d13d4138"); // 0
-	consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
+        //consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000c2a6d13d4138"); // Rap
+	consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");// Start
 
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x40e5b20023ae263fa2e62d8c6c7111aab7d2743851045a226525c6e32492c227"); // 0
+        consensus.defaultAssumeValid = uint256S("0x64c9cc82f05f4326e49fd4b21a48494b02b12a707de67a47c7e8e1102b0f1d9b"); // 0
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x74;//r
-        pchMessageStart[1] = 0x76;//t
-        pchMessageStart[2] = 0x6f;//m
+        pchMessageStart[0] = 0x74;//t
+        pchMessageStart[1] = 0x72;//r
+        pchMessageStart[2] = 0x6d;//m
         pchMessageStart[3] = 0x2e;//.
         nDefaultPort = 16789;
         nPruneAfterHeight = 100000;
-        //FindMainNetGenesisBlock(1614369600, 0x20001fff, "main");
-        genesis = CreateGenesisBlock(1641537356, 1678, 0x20001fff, 4, 5000 * COIN);
+        //FindMainNetGenesisBlock(1614369600, 1d6f6960, "main");
+        genesis = CreateGenesisBlock(1614369600, 1130, 0x20001fff, 4, 5000 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("eaaf8b155e68d72fafe388808e95f4319dba66da10fcff4de36d3fa7b758ffd1"));
-        assert(genesis.hashMerkleRoot == uint256S("d9dcbeb74f088aa69a07bcd62ac507531024f23ccd843ea146af95ab5e4f6aac"));
+        assert(consensus.hashGenesisBlock == uint256S("0xb79e5df07278b9567ada8fc655ffbfa9d3f586dc38da3dd93053686f41caeea0"));
+        assert(genesis.hashMerkleRoot == uint256S("0x87a48bc22468acdd72ee540aab7c086a5bbcddc12b51c6ac925717a74c269453"));
 
         vSeeds.emplace_back("seed00.mamatoreum.com", true);
        // vSeeds.emplace_back("seed01.mamatoreum.com", true);
@@ -484,7 +483,7 @@ public:
 
 
         // Mamatoreum addresses start with 'r'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,58);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,60);
         // Mamatoreum script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,16);
         // Mamatoreum private keys start with '7' or 'X'
@@ -530,19 +529,25 @@ public:
         nPoolMaxParticipants = 5;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
 
-        vSporkAddresses = {"RWGvGpd3yJdnfh9ziyHNDEoHMJBvnZ23zK"};
+        //vSporkAddresses = {"REj6zg8PtiUj2GgjVH4zQisa3AnBwSMmZz"};
+	vSporkAddresses = {"RFkP8R96AvQdgwCRXGw9gUiJFxQqSEp5iN"};
+
         nMinSporkKeys = 1;
         fBIP9CheckSmartnodesUpgraded = true;
 
         checkpointData = (CCheckpointData) {
             {
-                {0, uint256S("eaaf8b155e68d72fafe388808e95f4319dba66da10fcff4de36d3fa7b758ffd1")},
+		{0, uint256S("0xb79e5df07278b9567ada8fc655ffbfa9d3f586dc38da3dd93053686f41caeea0")},
+                /*{5145, uint256S("0x64c9cc82f05f4326e49fd4b21a48494b02b12a707de67a47c7e8e1102b0f1d9b")},
+                {35000, uint256S("0xb4fb191f3ef4141557aef8aafa700d312e5499cbde4a3079faa78cf58c0c414f")},
+                {61900, uint256S("0xc146fc6244fe4d71559f4fef16a386f1fceda6e5efa3da3ca1ebe9806cc8f25c")},
+                {183656, uint256S("0x40e5b20023ae263fa2e62d8c6c7111aab7d2743851045a226525c6e32492c227")}*/
 
            }
         };
 
         chainTxData = ChainTxData{
-        	1641537356, // * UNIX timestamp of last known number of transactions (Block 0)
+        	1614369600, // * UNIX timestamp of last known number of transactions (Block 0)
 			0,   // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.0         // * estimated number of transactions per second after that timestamp
@@ -607,10 +612,10 @@ public:
         nDefaultPort = 16788;
         nPruneAfterHeight = 1000;
         //FindMainNetGenesisBlock(1618814931,  0x20001fff, "test");
-        genesis = CreateGenesisBlock(1641537821, 5511, 0x20001fff, 4, 5000 * COIN);
+        genesis = CreateGenesisBlock(1618814931, 1398, 0x20001fff, 4, 5000 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0fe07dbf4b3197826149d183ab831fe0cc8cc889c24846c57db24718ec7cfd2e"));
-        assert(genesis.hashMerkleRoot == uint256S("d9dcbeb74f088aa69a07bcd62ac507531024f23ccd843ea146af95ab5e4f6aac"));
+        assert(consensus.hashGenesisBlock == uint256S("0x3c8321a56c52304c462f03f92f9e36677b57126501d77482feb763dcb59da91b"));
+        assert(genesis.hashMerkleRoot == uint256S("0x87a48bc22468acdd72ee540aab7c086a5bbcddc12b51c6ac925717a74c269453"));
 
         vFixedSeeds.clear();
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
@@ -655,7 +660,7 @@ public:
 
         vector<FounderRewardStructure> rewardStructures = {  {INT_MAX, 5}// 5% founder/dev fee forever
                                                 										   };
-		consensus.nFounderPayment = FounderPayment(rewardStructures, 200, "reWytCJZGmetgAeahMULhexHJVpx7QbebS");
+		consensus.nFounderPayment = FounderPayment(rewardStructures, 200, "rnJwwvyxyteQ8rQVXQoyRhJRN4vfJpTFmm");
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
@@ -669,7 +674,7 @@ public:
         nPoolMaxParticipants = 5;
         nFulfilledRequestExpireTime = 5*60; // fulfilled requests expire in 5 minutes
 
-        vSporkAddresses = {"rsqc2caFRG6myRdzKipP4PpVW9LnFaG7CH"};
+        vSporkAddresses = {"rek6PzPRcSUHjpknVEeRrFCmHbJSMKgKCJ"};
         nMinSporkKeys = 1;
         fBIP9CheckSmartnodesUpgraded = true;
 
@@ -867,10 +872,11 @@ public:
         nDefaultPort = 19899;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1641537092, 1096449, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1417713337, 1096447, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("19aebbdeeec6862bf882168b527a20816fa2127a677e47edb33ef4016a83b1e3"));
-        assert(genesis.hashMerkleRoot == uint256S("d9dcbeb74f088aa69a07bcd62ac507531024f23ccd843ea146af95ab5e4f6aac"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000008ca1832a4baf228eb1553c03d3a2c8e02399550dd6ea8d65cec3ef23d2e"));
+        assert(genesis.hashMerkleRoot == uint256S("0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7"));
+
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
