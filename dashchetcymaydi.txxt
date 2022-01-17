@@ -1,3 +1,51 @@
+
+############# Test net ############################
+./generate-genesis -algo x11 -bits 1e0ffff0 -psz "CHET CU MAY DI DASH" -pubkey "04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5" -timestamp 1642414951 -nonce 0
+
+Ctrl Hash:	0x000007aad8a54d1cb56b8a6cdc6e68ace8eba6bb9cfc39d5a7150f95eec0d290
+Target:		0x00000ffff0000000000000000000000000000000000000000000000000000000
+Blk Hash:	0x000007aad8a54d1cb56b8a6cdc6e68ace8eba6bb9cfc39d5a7150f95eec0d290
+Mkl Hash:	0xe7b451c7f64ab28f4abf2a983f221656727fa19c12633b1140f350b27c8b68f9
+Nonce:		164058
+Timestamp:	1642414951
+Pubkey:		04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5
+Coins:		5000000000
+Psz:		'CHET CU MAY DI DASH'
+
+#############Main Net###################
+./generate-genesis -algo x11 -bits 1e0ffff0 -psz "CHET CU MAY DI DASH" -pubkey "04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5" -timestamp 1642415732 -nonce 0
+
+Ctrl Hash:	0x000003a914367a1afb7390e313eee0cfdf6344b2999cb560dc0dab5a57654c5f
+Target:		0x00000ffff0000000000000000000000000000000000000000000000000000000
+Blk Hash:	0x000003a914367a1afb7390e313eee0cfdf6344b2999cb560dc0dab5a57654c5f
+Mkl Hash:	0xe7b451c7f64ab28f4abf2a983f221656727fa19c12633b1140f350b27c8b68f9
+Nonce:		510849
+Timestamp:	1642415732
+Pubkey:		04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5
+Coins:		5000000000
+Psz:		'CHET CU MAY DI DASH'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ############################
 Alert - main net
 
