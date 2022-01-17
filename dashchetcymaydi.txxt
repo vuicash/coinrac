@@ -1,3 +1,9 @@
+The test net add ==> This is sPorkAdd ====> The sPorkkey Test net
+vALcE8BAMzP4S98EjuwZ5UWyY9XRneBt9n
+The Main net add ==> This is sPorkAdd ====> The sPorkkey Test net
+VPS5j94xyYeCKNpMAvD8NqT2UgQR9tE3Ts
+
+
 
 ############# Test net ############################
 ./generate-genesis -algo x11 -bits 1e0ffff0 -psz "CHET CU MAY DI DASH" -pubkey "04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5" -timestamp 1642414951 -nonce 0
