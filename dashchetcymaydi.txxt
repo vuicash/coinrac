@@ -1,0 +1,81 @@
+############################
+Alert - main net
+
+04924d7303221221038099b65b08bd83ddfef12b241fc0e2359579cf49588f825eeed2ba2f7315925b7b88d6a79f3af5dc0ea04a6bd042b0f44002376fc0881dc6
+
+############################
+
+Alert - Test net
+
+04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5
+
+############################
+Public - Main net
+
+04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5
+
+############################
+Spork main net
+
+04cf2872daee04aa70714faf9dc1ad28d6a9c49dad2c20ebb66eccb2d874491aa05adb0bf392d5ecb1786900dad214d623031b5bc7f111b9f07a77d796fac4ea7a
+############################
+
+Spork Test net
+
+04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5
+
+
+############################
+
+
+Test key 
+node genesis -a x11 -z "CHET CU MAY DI DASH" -p "04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5" -t 1642414951 -n 0 -b 0x1e0ffff0
+
+algorithm: x11
+pzTimestamp: CHET CU MAY DI DASH
+pubkey: 04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5
+bits: 504365040
+time: 1642414951
+merkle root hash: ffbffe6afbe41c1aca2d19d536f2a403fd10f09b0bc4bd88ec29ff4fc6d6fc0a
+Searching for genesis hash...
+nonce: 888479
+genesis hash: 0000047e2a17f0e18e4b367705189a6b68d402ab0de0e7be11814e2e712e2c6e
+
+
+
+############################
+
+Test main
+
+node genesis -a x11 -z "CHET CU MAY DI DASH" -p "04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5" -t 1642415732 -n 0 -b 0x1e0ffff0
+
+
+algorithm: x11
+pzTimestamp: CHET CU MAY DI DASH
+pubkey: 04b5bd282f6556ab40cf546ce4e88f142fb83ede091fa2ac5a0f4e08c6df15402455d8fc1129ca856c74ab596848dcf4440dd448fa12bbd14b2ae8eacffccf63c5
+bits: 504365040
+time: 1642415732
+merkle root hash: ffbffe6afbe41c1aca2d19d536f2a403fd10f09b0bc4bd88ec29ff4fc6d6fc0a
+Searching for genesis hash...
+nonce: 360773
+genesis hash: 0000043082874ec5b531e85b313fdc33de995a28c0fe423bc0ba66bb2d84605d
+
+
+############################
+
+
+############################
+
+
+############################
+
+
+############################
+
+
+############################
+
+
+############################
+
+############################
